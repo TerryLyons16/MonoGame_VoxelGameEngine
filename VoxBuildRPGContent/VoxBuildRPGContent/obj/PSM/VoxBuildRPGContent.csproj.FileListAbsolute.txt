@@ -1,0 +1,65 @@
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\blank.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt2.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt_and_stone.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFontHighlighted.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFontShadowed.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\OutputMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\ResourceMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\ResourceMenu_New.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\SimulatorMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\SimulatorOutputMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\Coin_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\DefaultResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\GreenResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\RedResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\BackgroundScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\MainMenuScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\SimulatorMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\TestMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultClickedButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultHoverButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultIdleButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\SimulatorHoverButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\SimulatorIdleButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\CattleFieldTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\FishermansHutTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GrainFieldTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\ShopTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\SplashScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\terrain.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\InventorySlot.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIcon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\Font.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFont.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\SimulatorFont.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\crate.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Factory.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Freelancer.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Node.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\IgnoreMe.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\IgnoreMe.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\VoxBuildRPGContent.csprojResolveAssemblyReference.cache
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconBlock.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconTool.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\DepthNormal.xnb

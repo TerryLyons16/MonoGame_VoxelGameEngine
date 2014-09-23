@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63D59FCC-0E34-4B39-BF4A-CF782AABC61B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VoxBuildRPG</RootNamespace>
+    <AssemblyName>VoxBuildRPG</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Game Engine\AbstractWorldObject.cs" />
+    <Compile Include="Game Engine\Engine [OLD].cs" />
+    <Compile Include="Game Engine\Environment State\GameState.cs" />
+    <Compile Include="Game Engine\Environment State\GameWorldControlState.cs" />
+    <Compile Include="Game Engine\Inventory System\Abilities\AbilityInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Abilities\Build\BlockInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Abilities\Build\RemoveBlockAbility.cs" />
+    <Compile Include="Game Engine\Inventory System\Abilities\Build\RemoveWallAbility.cs" />
+    <Compile Include="Game Engine\Inventory System\Abilities\Build\WallInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\ArmourInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\Armour\ArmourInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Armour\ChestArmourInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Armour\FootArmourInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Armour\HeadArmourInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Armour\LegArmourInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\ArrayInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\CharacterInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\EquippedItemsInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\IInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\Inventory.cs" />
+    <Compile Include="Game Engine\Inventory System\InventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\ToolAbilityInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\EquippedToolInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\Tools\ToolInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Tools\WeaponInventoryItem.cs" />
+    <Compile Include="Game Engine\Physics\BlockCollisionFace.cs" />
+    <Compile Include="Game Engine\Physics\CollisionBox.cs" />
+    <Compile Include="Game Engine\Physics\CollisionFace.cs" />
+    <Compile Include="Game Engine\Rendering\Renderer.cs" />
+    <Compile Include="Game Engine\Rendering\ShaderManager.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\AbstractPhysicsObject.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\BuildingPhysicsObject.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\CollisionSquare.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\MovingPhysicsObject.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\Pathfinder.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\PathfindNode.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\PathfindWaypoint.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Physics System\StaticPhysicsObject.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resource Factories\AbstractResourceFactory.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resource Factories\AbstractResourceFactoryEntity.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resource Factories\AbstractResourceRule.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resources\AbstractResource.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resources\IGlobalResource.cs" />
+    <Compile Include="Game Engine\Subsystems [OLD]\Resources\ILocalResource.cs" />
+    <Compile Include="Game Engine\Rendering\Camera.cs" />
+    <Compile Include="Game Engine\Visualisation\3D Screen\GameWorldScreen[OLD].cs" />
+    <Compile Include="Game Engine\Visualisation\AbstractDrawableGameObject.cs" />
+    <Compile Include="Game Engine\Visualisation\AbstractRendererScreen.cs" />
+    <Compile Include="Game Engine\Visualisation\GameplayScreen.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\GameHUDScreen.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventoryGridView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventorySlot.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\EquippedToolInventoryGridView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryGridView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryItemView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventorySlot.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\PlayerToolInventoryView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\RendererTextElement.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Tooltips\InventoryItemTooltip.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Tooltips\Tooltip.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\UIElement.cs" />
+    <Compile Include="Game Engine\World\AbstractActor.cs" />
+    <Compile Include="Game Engine\World\AbstractTerrainObject.cs" />
+    <Compile Include="Game Engine\World\Building\Wall.cs" />
+    <Compile Include="Game Engine\World\BuildTools.cs" />
+    <Compile Include="Game Engine\World\Direction.cs" />
+    <Compile Include="Game Engine\World\Geometry\GeometryServices.cs" />
+    <Compile Include="Game Engine\World\TEMPPlayerActor.cs" />
+    <Compile Include="Game Engine\World\Terrain Generation\PerlinNoise.cs" />
+    <Compile Include="Game Engine\World\Terrain Generation\SimplexNoise.cs" />
+    <Compile Include="Game Engine\World\Textures\TextureAtlas.cs" />
+    <Compile Include="Game Engine\World\Textures\TextureName.cs" />
+    <Compile Include="Game Engine\World\Voxels\AbstractBlock.cs" />
+    <Compile Include="Game Engine\World\Voxels\BlockShape.cs" />
+    <Compile Include="Game Engine\World\Voxels\Chunk.cs" />
+    <Compile Include="Game Engine\World\Voxels\ChunkGridItem.cs" />
+    <Compile Include="Game Engine\World\Voxels\ChunkManager.cs" />
+    <Compile Include="Game Engine\World\Voxels\DirtBlock.cs" />
+    <Compile Include="Game Engine\World\Voxels\MaterialType.cs" />
+    <Compile Include="Game Engine\World\Voxels\VoxelRaycastUtility.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Menu System\AbstractScreen.cs" />
+    <Compile Include="Menu System\InputState.cs" />
+    <Compile Include="Menu System\ScreenManager.cs" />
+    <Compile Include="Menu System\Screens\BackgroundScreen.cs" />
+    <Compile Include="Menu System\Screens\DebugScreen.cs" />
+    <Compile Include="Menu System\Screens\LoadingScreen.cs" />
+    <Compile Include="Menu System\Screens\MainMenuScreen.cs" />
+    <Compile Include="Menu System\Screens\Menu Elements\ButtonElement.cs" />
+    <Compile Include="Menu System\Screens\Menu Elements\MenuElement.cs" />
+    <Compile Include="Menu System\Screens\Menu Elements\TextElement.cs" />
+    <Compile Include="Menu System\Screens\MenuScreen.cs" />
+    <Compile Include="Menu System\Screens\OptionsScreen.cs" />
+    <Compile Include="Menu System\Screens\PauseScreen.cs" />
+    <Compile Include="Menu System\Screens\GameContainerScreen.cs" />
+    <Compile Include="Menu System\Screens\TitleScreen.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildExtensionsPath)\..\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game Engine\Inventory System\Abilities\Combat\" />
+    <Folder Include="Game Engine\Rendering\Lighting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VoxBuildRPGContent\VoxBuildRPGContent\VoxBuildRPGContent.csproj">
+      <Project>{1c201c1d-8002-4120-abd4-954079bc4a9a}</Project>
+      <Name>VoxBuildRPGContent</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

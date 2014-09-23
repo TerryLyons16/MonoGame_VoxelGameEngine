@@ -1,0 +1,61 @@
+Content\blank.xnb
+Content\dirt.xnb
+Content\dirt2.xnb
+Content\dirt_and_stone.xnb
+Content\Fonts\MenuFontHighlighted.xnb
+Content\Fonts\MenuFontShadowed.xnb
+Content\Images\HUD\Element Backgrounds\OutputMenu.xnb
+Content\Images\HUD\Element Backgrounds\ResourceMenu.xnb
+Content\Images\HUD\Element Backgrounds\ResourceMenu_New.xnb
+Content\Images\HUD\Element Backgrounds\SimulatorMenu.xnb
+Content\Images\HUD\Element Backgrounds\SimulatorOutputMenu.xnb
+Content\Images\HUD\Elements\Resources\Coin_Icon.xnb
+Content\Images\HUD\Elements\Resources\DefaultResource_Icon.xnb
+Content\Images\HUD\Elements\Resources\GreenResource_Icon.xnb
+Content\Images\HUD\Elements\Resources\RedResource_Icon.xnb
+Content\Images\Menus\Menu Backgrounds\BackgroundScreen.xnb
+Content\Images\Menus\Menu Backgrounds\MainMenuScreen.xnb
+Content\Images\Menus\Menu Backgrounds\SimulatorMenu.xnb
+Content\Images\Menus\Menu Backgrounds\TestMenu.xnb
+Content\Images\Menus\Menu Elements\DefaultClickedButton.xnb
+Content\Images\Menus\Menu Elements\DefaultHoverButton.xnb
+Content\Images\Menus\Menu Elements\DefaultIdleButton.xnb
+Content\Images\Menus\Menu Elements\SimulatorHoverButton.xnb
+Content\Images\Menus\Menu Elements\SimulatorIdleButton.xnb
+Content\Models\CattleFieldTexture.xnb
+Content\Models\char.xnb
+Content\Models\Crate_texture.xnb
+Content\Models\FishermansHutTexture.xnb
+Content\Models\GrainFieldTexture.xnb
+Content\Models\HomeTexture.xnb
+Content\Models\NodeTexture.xnb
+Content\Models\ShopTexture.xnb
+Content\SplashScreen.xnb
+Content\terrain.xnb
+Content\Textures\UI\InventorySlot.xnb
+Content\Textures\UI\TestIcon.xnb
+Content\Effects\Billboard.xnb
+Content\Fonts\Font.xnb
+Content\Fonts\MenuFont.xnb
+Content\Fonts\SimulatorFont.xnb
+Content\Models\crate.xnb
+Content\Models\Factory.xnb
+Content\Models\Freelancer.xnb
+Content\Models\GreenBox.xnb
+Content\Models\Node.xnb
+Content\Models\OrangeBox.xnb
+Content\Models\PortalTile.xnb
+Content\Models\RedBox.xnb
+Content\Models\tile.xnb
+Content\Models\Crate_texture_0.xnb
+Content\Models\HomeTexture_0.xnb
+Content\Models\char_0.xnb
+Content\Models\GreenBox_0.xnb
+Content\Models\NodeTexture_0.xnb
+Content\Models\OrangeBox_0.xnb
+Content\Models\PortalTile_0.xnb
+Content\Models\RedBox_0.xnb
+Content\Models\tile_0.xnb
+Content\Textures\UI\TestIconBlock.xnb
+Content\Textures\UI\TestIconTool.xnb
+Content\Effects\DepthNormal.xnb

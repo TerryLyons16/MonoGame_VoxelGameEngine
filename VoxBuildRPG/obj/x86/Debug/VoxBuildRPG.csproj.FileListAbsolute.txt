@@ -1,0 +1,87 @@
+c:\users\freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.exe
+c:\users\freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\MonoGame.Framework.dll
+c:\users\freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.dll
+c:\users\freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D11.dll
+c:\users\freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\blank.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\dirt.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\dirt2.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\dirt_and_stone.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\MenuFontHighlighted.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\MenuFontShadowed.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Element Backgrounds\OutputMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Element Backgrounds\ResourceMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Element Backgrounds\ResourceMenu_New.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Element Backgrounds\SimulatorMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Element Backgrounds\SimulatorOutputMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Elements\Resources\Coin_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Elements\Resources\DefaultResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Elements\Resources\GreenResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\HUD\Elements\Resources\RedResource_Icon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Backgrounds\BackgroundScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Backgrounds\MainMenuScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Backgrounds\SimulatorMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Backgrounds\TestMenu.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Elements\DefaultClickedButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Elements\DefaultHoverButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Elements\DefaultIdleButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Elements\SimulatorHoverButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Images\Menus\Menu Elements\SimulatorIdleButton.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\CattleFieldTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\char.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Crate_texture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\FishermansHutTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\GrainFieldTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\HomeTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\NodeTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\ShopTexture.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\SplashScreen.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\terrain.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\InventorySlot.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIcon.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Billboard.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\Font.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\MenuFont.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\SimulatorFont.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\crate.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Factory.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Freelancer.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\GreenBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Node.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\OrangeBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\PortalTile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\RedBox.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\tile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Crate_texture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\HomeTexture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\char_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\GreenBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\NodeTexture_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\OrangeBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\PortalTile_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\RedBox_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\tile_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\IgnoreMe.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Lidgren.Network.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.csprojResolveAssemblyReference.cache
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.exe
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.pdb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.pdb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIconBlock.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIconTool.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\DepthNormal.xnb

@@ -1,0 +1,771 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline" xmlns:Framework="Microsoft.Xna.Framework" xmlns:Processors="Microsoft.Xna.Framework.Content.Pipeline.Processors">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>blank.png</Source>
+      <Name>blank</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\blank.xnb</Output>
+      <Time>2014-08-11T19:30:26.2655772+01:00</Time>
+    </Item>
+    <Item>
+      <Source>dirt.png</Source>
+      <Name>dirt</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt.xnb</Output>
+      <Time>2014-08-11T19:30:26.2812284+01:00</Time>
+    </Item>
+    <Item>
+      <Source>dirt2.png</Source>
+      <Name>dirt2</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt2.xnb</Output>
+      <Time>2014-08-11T19:30:26.3124254+01:00</Time>
+    </Item>
+    <Item>
+      <Source>dirt_and_stone.png</Source>
+      <Name>dirt_and_stone</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\dirt_and_stone.xnb</Output>
+      <Time>2014-08-11T19:30:26.2967997+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MenuFontHighlighted.png</Source>
+      <Name>Fonts\MenuFontHighlighted</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFontHighlighted.xnb</Output>
+      <Time>2014-08-11T19:30:25.421552+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MenuFontShadowed.png</Source>
+      <Name>Fonts\MenuFontShadowed</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFontShadowed.xnb</Output>
+      <Time>2014-08-11T19:30:25.4371669+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Element Backgrounds\OutputMenu.png</Source>
+      <Name>Images\HUD\Element Backgrounds\OutputMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\OutputMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.4684147+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Element Backgrounds\ResourceMenu.png</Source>
+      <Name>Images\HUD\Element Backgrounds\ResourceMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\ResourceMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.4840609+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Element Backgrounds\ResourceMenu_New.png</Source>
+      <Name>Images\HUD\Element Backgrounds\ResourceMenu_New</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\ResourceMenu_New.xnb</Output>
+      <Time>2014-08-11T19:30:25.4996647+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Element Backgrounds\SimulatorMenu.png</Source>
+      <Name>Images\HUD\Element Backgrounds\SimulatorMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\SimulatorMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.5153095+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Element Backgrounds\SimulatorOutputMenu.png</Source>
+      <Name>Images\HUD\Element Backgrounds\SimulatorOutputMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Element Backgrounds\SimulatorOutputMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.5153095+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Elements\Resources\Coin_Icon.png</Source>
+      <Name>Images\HUD\Elements\Resources\Coin_Icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\Coin_Icon.xnb</Output>
+      <Time>2014-08-11T19:30:25.5309151+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Elements\Resources\DefaultResource_Icon.png</Source>
+      <Name>Images\HUD\Elements\Resources\DefaultResource_Icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\DefaultResource_Icon.xnb</Output>
+      <Time>2014-08-11T19:30:25.5309151+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Elements\Resources\GreenResource_Icon.png</Source>
+      <Name>Images\HUD\Elements\Resources\GreenResource_Icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\GreenResource_Icon.xnb</Output>
+      <Time>2014-08-11T19:30:25.5309151+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\HUD\Elements\Resources\RedResource_Icon.png</Source>
+      <Name>Images\HUD\Elements\Resources\RedResource_Icon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\HUD\Elements\Resources\RedResource_Icon.xnb</Output>
+      <Time>2014-08-11T19:30:25.5465608+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Backgrounds\BackgroundScreen.png</Source>
+      <Name>Images\Menus\Menu Backgrounds\BackgroundScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\BackgroundScreen.xnb</Output>
+      <Time>2014-08-11T19:30:25.5777902+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Backgrounds\MainMenuScreen.png</Source>
+      <Name>Images\Menus\Menu Backgrounds\MainMenuScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\MainMenuScreen.xnb</Output>
+      <Time>2014-08-11T19:30:25.593418+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Backgrounds\SimulatorMenu.png</Source>
+      <Name>Images\Menus\Menu Backgrounds\SimulatorMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\SimulatorMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.6090958+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Backgrounds\TestMenu.png</Source>
+      <Name>Images\Menus\Menu Backgrounds\TestMenu</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Backgrounds\TestMenu.xnb</Output>
+      <Time>2014-08-11T19:30:25.6403466+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Elements\DefaultClickedButton.png</Source>
+      <Name>Images\Menus\Menu Elements\DefaultClickedButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultClickedButton.xnb</Output>
+      <Time>2014-08-11T19:30:25.6559752+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Elements\DefaultHoverButton.png</Source>
+      <Name>Images\Menus\Menu Elements\DefaultHoverButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultHoverButton.xnb</Output>
+      <Time>2014-08-11T19:30:25.7028525+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Elements\DefaultIdleButton.png</Source>
+      <Name>Images\Menus\Menu Elements\DefaultIdleButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\DefaultIdleButton.xnb</Output>
+      <Time>2014-08-11T19:30:25.7184785+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Elements\SimulatorHoverButton.png</Source>
+      <Name>Images\Menus\Menu Elements\SimulatorHoverButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\SimulatorHoverButton.xnb</Output>
+      <Time>2014-08-11T19:30:25.7341025+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Images\Menus\Menu Elements\SimulatorIdleButton.png</Source>
+      <Name>Images\Menus\Menu Elements\SimulatorIdleButton</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Images\Menus\Menu Elements\SimulatorIdleButton.xnb</Output>
+      <Time>2014-08-11T19:30:25.7341025+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\CattleFieldTexture.png</Source>
+      <Name>Models\CattleFieldTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\CattleFieldTexture.xnb</Output>
+      <Time>2014-08-11T19:30:25.7496695+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\char.png</Source>
+      <Name>Models\char</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char.xnb</Output>
+      <Time>2014-08-11T19:30:25.7653225+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Crate_texture.png</Source>
+      <Name>Models\Crate_texture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture.xnb</Output>
+      <Time>2014-08-11T19:30:25.8277989+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\FishermansHutTexture.png</Source>
+      <Name>Models\FishermansHutTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\FishermansHutTexture.xnb</Output>
+      <Time>2014-08-11T19:30:25.890351+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\GrainFieldTexture.png</Source>
+      <Name>Models\GrainFieldTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GrainFieldTexture.xnb</Output>
+      <Time>2014-08-11T19:30:25.921553+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\HomeTexture.png</Source>
+      <Name>Models\HomeTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture.xnb</Output>
+      <Time>2014-08-11T19:30:25.9840846+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\NodeTexture.png</Source>
+      <Name>Models\NodeTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture.xnb</Output>
+      <Time>2014-08-11T19:30:26.0309298+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\ShopTexture.png</Source>
+      <Name>Models\ShopTexture</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\ShopTexture.xnb</Output>
+      <Time>2014-08-11T19:30:26.156179+01:00</Time>
+    </Item>
+    <Item>
+      <Source>SplashScreen.png</Source>
+      <Name>SplashScreen</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\SplashScreen.xnb</Output>
+      <Time>2014-08-11T19:30:26.3749454+01:00</Time>
+    </Item>
+    <Item>
+      <Source>terrain.png</Source>
+      <Name>terrain</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\terrain.xnb</Output>
+      <Time>2014-08-11T19:30:26.3749454+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\UI\InventorySlot.png</Source>
+      <Name>Textures\UI\InventorySlot</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\InventorySlot.xnb</Output>
+      <Time>2014-08-11T19:30:26.218702+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\UI\TestIcon.png</Source>
+      <Name>Textures\UI\TestIcon</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIcon.xnb</Output>
+      <Time>2014-08-11T19:30:26.2499793+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\Billboard.fx</Source>
+      <Name>Effects\Billboard</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb</Output>
+      <Time>2014-08-11T19:30:25.3434696+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\Font.spritefont</Source>
+      <Name>Fonts\Font</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\Font.xnb</Output>
+      <Time>2014-08-11T19:30:25.3747192+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\MenuFont.spritefont</Source>
+      <Name>Fonts\MenuFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFont.xnb</Output>
+      <Time>2014-08-11T19:30:25.3903033+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Fonts\SimulatorFont.spritefont</Source>
+      <Name>Fonts\SimulatorFont</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\SimulatorFont.xnb</Output>
+      <Time>2014-08-11T19:30:25.4528203+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\crate.fbx</Source>
+      <Name>Models\crate</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\crate.xnb</Output>
+      <Time>2014-08-11T19:30:25.7809755+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\crate_0.xml</Key>
+        <Value>2014-08-14T18:00:52.0471335+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Factory.fbx</Source>
+      <Name>Models\Factory</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Factory.xnb</Output>
+      <Time>2014-08-11T19:30:25.8591006+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Factory_0.xml</Key>
+        <Value>2014-08-14T18:00:53.9778132+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Freelancer.fbx</Source>
+      <Name>Models\Freelancer</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Freelancer.xnb</Output>
+      <Time>2014-08-11T19:30:25.9059762+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Freelancer_0.xml</Key>
+        <Value>2014-08-14T18:00:54.5982125+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\GreenBox.fbx</Source>
+      <Name>Models\GreenBox</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox.xnb</Output>
+      <Time>2014-08-11T19:30:25.9371996+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\GreenBox_0.xml</Key>
+        <Value>2014-08-14T18:00:54.7700916+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\Node.fbx</Source>
+      <Name>Models\Node</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Node.xnb</Output>
+      <Time>2014-08-11T19:30:26.0153269+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Node_0.xml</Key>
+        <Value>2014-08-14T18:00:55.5133393+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\OrangeBox.fbx</Source>
+      <Name>Models\OrangeBox</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox.xnb</Output>
+      <Time>2014-08-11T19:30:26.0622264+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\OrangeBox_0.xml</Key>
+        <Value>2014-08-14T18:00:56.1227223+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\PortalTile.fbx</Source>
+      <Name>Models\PortalTile</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile.xnb</Output>
+      <Time>2014-08-11T19:30:26.0937274+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\PortalTile_0.xml</Key>
+        <Value>2014-08-14T18:00:56.5602479+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\RedBox.fbx</Source>
+      <Name>Models\RedBox</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox.xnb</Output>
+      <Time>2014-08-11T19:30:26.1405546+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\RedBox_0.xml</Key>
+        <Value>2014-08-14T18:00:57.1071685+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\tile.fbx</Source>
+      <Name>Models\tile</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile.xnb</Output>
+      <Time>2014-08-11T19:30:26.1718534+01:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\tile_0.xml</Key>
+        <Value>2014-08-14T18:00:57.5446941+01:00</Value>
+      </Dependency>
+      <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\crate.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\crate_0.xml</Output>
+      <Time>2014-08-11T19:30:25.7809755+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Crate_texture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb</Output>
+      <Time>2014-08-11T19:30:25.8277989+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Factory.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Factory_0.xml</Output>
+      <Time>2014-08-11T19:30:25.8591006+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\HomeTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb</Output>
+      <Time>2014-08-11T19:30:25.9840846+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Freelancer.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Freelancer_0.xml</Output>
+      <Time>2014-08-11T19:30:25.9059762+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\char.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb</Output>
+      <Time>2014-08-11T19:30:25.7653225+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\GreenBox.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\GreenBox_0.xml</Output>
+      <Time>2014-08-11T19:30:25.9371996+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\GreenBox.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox_0.xnb</Output>
+      <Time>2014-08-11T19:30:25.9684761+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\Node.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Node_0.xml</Output>
+      <Time>2014-08-11T19:30:26.0153269+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\NodeTexture.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture_0.xnb</Output>
+      <Time>2014-08-11T19:30:26.0309298+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\OrangeBox.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\OrangeBox_0.xml</Output>
+      <Time>2014-08-11T19:30:26.0622264+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\OrangeBox.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox_0.xnb</Output>
+      <Time>2014-08-11T19:30:26.0622264+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\PortalTile.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\PortalTile_0.xml</Output>
+      <Time>2014-08-11T19:30:26.0937274+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\PortalTile.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb</Output>
+      <Time>2014-08-11T19:30:26.1093522+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\RedBox.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\RedBox_0.xml</Output>
+      <Time>2014-08-11T19:30:26.1405546+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\RedBox.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb</Output>
+      <Time>2014-08-11T19:30:26.1405546+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tile.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\tile_0.xml</Output>
+      <Time>2014-08-11T19:30:26.1718534+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\tile.png</Source>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Parameters>
+        <Data Key="ColorKeyColor" Type="Framework:Color">FFFF00FF</Data>
+        <Data Key="ColorKeyEnabled" Type="bool">true</Data>
+        <Data Key="TextureFormat" Type="Processors:TextureProcessorOutputFormat">DxtCompressed</Data>
+        <Data Key="GenerateMipmaps" Type="bool">true</Data>
+        <Data Key="ResizeToPowerOfTwo" Type="bool">false</Data>
+        <Data Key="PremultiplyAlpha" Type="bool">true</Data>
+      </Parameters>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb</Output>
+      <Time>2014-08-11T19:30:26.1874781+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\UI\TestIconBlock.png</Source>
+      <Name>Textures\UI\TestIconBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconBlock.xnb</Output>
+      <Time>2014-08-18T18:31:00.3673277+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\UI\TestIconTool.png</Source>
+      <Name>Textures\UI\TestIconTool</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconTool.xnb</Output>
+      <Time>2014-08-18T18:36:55.8291484+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Effects\DepthNormal.fx</Source>
+      <Name>Effects\DepthNormal</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\DepthNormal.xnb</Output>
+      <Time>2014-09-23T21:27:59.5197201+01:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <ContentProjectGUID>{66A02B7D-B147-473E-98E3-A5CCDCA57C56}</ContentProjectGUID>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>HiDef</TargetProfile>
+      <BuildConfiguration>PSM</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContentContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
+        <Value>2014-04-05T22:56:18+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2011-09-01T16:22:30+01:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2014-08-11T19:05:27.2321611+01:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Graphics="Microsoft.Xna.Framework.Content.Pipeline.Graphics" xmlns:Framework="Microsoft.Xna.Framework">
+  <Asset Type="Graphics:NodeContent">
+    <Name>RootNode</Name>
+    <Identity>
+      <SourceFilename>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContentContent\Models\OrangeBox.fbx</SourceFilename>
+      <SourceTool>FbxImporter</SourceTool>
+    </Identity>
+    <Transform>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</Transform>
+    <Children>
+      <Child Type="Graphics:MeshContent">
+        <Name>Cube</Name>
+        <Transform>1 0 0 0 0 0 -1 0 0 1 0 0 0 0 0 1</Transform>
+        <Positions>0.5 0.019019 -0.5 0.5 0.019019 0.5 -0.5 0.019019 0.5 -0.5 0.019019 -0.5 0.5 2.452045 -0.499999 0.5 2.452045 0.500001 -0.5 2.452045 0.5 -0.5 2.452045 -0.5</Positions>
+        <Geometry>
+          <Batch>
+            <Material>#Resource1</Material>
+            <Indices>2 1 0 0 3 2 6 5 4 4 7 6 7 4 8 8 9 7 11 10 1 1 2 11 5 6 12 12 13 5 3 0 4 4 5 3</Indices>
+            <Vertices>
+              <PositionIndices>0 1 2 3 4 7 6 5 0 1 5 6 2 3</PositionIndices>
+              <Channels>
+                <VertexChannel Name="Normal0" ElementType="Framework:Vector3">0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 -0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 0.5773492 0.5773492 -0.5773492 0.5773492 0.5773492 -0.5773492 -0.5773492 0.5773492 -0.5773492 -0.5773492 -0.5773492</VertexChannel>
+                <VertexChannel Name="TextureCoordinate0" ElementType="Framework:Vector2">0.354351 0.5 0.354351 0.645644 0.499995 0.645644 0.499995 0.5 0.354351 0.145644 0.499995 0.145644 0.499994 1E-06 0.354351 2E-06 0 0.145644 0 2E-06 0.35435 1 0.499995 1 0.854348 0 0.854349 0.145643</VertexChannel>
+              </Channels>
+            </Vertices>
+          </Batch>
+        </Geometry>
+      </Child>
+    </Children>
+  </Asset>
+  <Resources>
+    <Resource ID="#Resource1" Type="Graphics:BasicMaterialContent">
+      <Name>Material__OrangeBox</Name>
+      <Identity>
+        <SourceFilename>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContentContent\Models\OrangeBox.fbx</SourceFilename>
+        <SourceTool>FbxImporter</SourceTool>
+      </Identity>
+      <OpaqueData>
+        <Data Key="DiffuseColor" Type="Framework:Vector3">0.8 0.8 0.8</Data>
+        <Data Key="EmissiveColor" Type="Framework:Vector3">0 0 0</Data>
+        <Data Key="Alpha" Type="float">1</Data>
+        <Data Key="SpecularColor" Type="Framework:Vector3">0 0 0</Data>
+      </OpaqueData>
+      <Textures>
+        <Texture Key="Texture">
+          <OpaqueData>
+            <Data Key="TextureCoordinate">TextureCoordinate0</Data>
+          </OpaqueData>
+          <Reference>#External1</Reference>
+        </Texture>
+      </Textures>
+    </Resource>
+  </Resources>
+  <ExternalReferences>
+    <ExternalReference ID="#External1" TargetType="Graphics:TextureContent">..\..\..\..\VoxBuildRPGContentContent\Models\OrangeBox.png</ExternalReference>
+  </ExternalReferences>
+</XnaContent>

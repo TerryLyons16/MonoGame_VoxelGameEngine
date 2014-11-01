@@ -1,8 +1,8 @@
-﻿using System;
+﻿using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using VoxelRPGGame.GameEngine.InventorySystem;
 
 namespace VoxelRPGGame.GameEngine.UI.Inventory
@@ -12,6 +12,13 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         protected InventorySystem.IInventory _inventoryModel;
         protected Dictionary<InventoryItem, int[]> desiredPositions = new Dictionary<InventoryItem, int[]>();
 
+        public override Vector2 Position
+        {
+            get
+            {
+                return _positionAbsolute;
+            }
+        }
 
         public InventoryView(InventorySystem.IInventory inventoryModel)
         {

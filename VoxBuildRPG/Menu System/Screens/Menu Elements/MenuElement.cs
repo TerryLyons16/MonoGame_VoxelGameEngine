@@ -13,6 +13,9 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
 {
     public class MenuElement
     {
+        public delegate void OnClick(MenuElement element);
+        public event OnClick OnClickEvent; 
+
         protected Vector2 position;
         protected bool hasFocus = true;
         protected bool isActive = true;
@@ -28,7 +31,6 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
         protected bool isHighlighted = false;
         protected bool mouseOver = false; //true if the mouse is over the element
 
-        public event EventHandler<EventArgs> Selected ;
       //  public event EventHandler<EventArgs> Highlighted;
     //    public event EventHandler<EventArgs> UnHighlighted;
 
@@ -50,9 +52,13 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
         {
         }
 
-        protected void ElementSelected(object sender, EventArgs e)
+        protected void OnElementClick()
         {
-            Selected(sender,e);
+            if(OnClickEvent!=null)
+            {
+                OnClickEvent(this);
+            }
+         
         }
 
      /*   protected void ElementHighlighted(object sender, EventArgs e)

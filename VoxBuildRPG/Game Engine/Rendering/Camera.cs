@@ -13,14 +13,16 @@ using Microsoft.Xna.Framework.Media;
 using VoxelRPGGame.GameEngine.UI;
 using VoxelRPGGame.MenuSystem;
 using VoxelRPGGame.GameEngine.World;
+using VoxelRPGGame.MenuSystem.Screens;
+using VoxBuildRPG.GameEngine.Rendering;
 
 namespace VoxelRPGGame.GameEngine.Rendering
 {
-    public class Camera
+    public class Camera: IRenderable
     {
       //  private Rectangle viewport;
         private Vector3 cameraPosition;
-        private float rotationSpeed = 0.15f;
+        private float rotationSpeed = 0.0275f;
         private Vector3 cameraOffset = Vector3.Zero;
         private Vector3 cameraRotation = Vector3.Zero;
         private float rotationRadians = 0.0f;
@@ -39,6 +41,8 @@ namespace VoxelRPGGame.GameEngine.Rendering
         private bool isSoftLocked = false;//If a target object is softLocked, the camera can disconnect from it if the user moves the camera
 
         private int defaultZoom = 20, minimumZoom = 1, maximumZoom = 50/*100*/, currentZoom;
+
+        int Temp_updateCount = 0;
 
         public Camera(GraphicsDevice graphics)
         {
@@ -79,6 +83,9 @@ namespace VoxelRPGGame.GameEngine.Rendering
 
          //   cameraPosition =cameraRotation+ new Vector3((cameraTarget.X - (5 * currentZoom)), (cameraTarget.Y + (5 + (5 * currentZoom))), (cameraTarget.Z - (5 * currentZoom)));
          //   cameraPosition = cameraRotation + cameraPosition;
+
+
+            DebugScreen.GetInstance().SetDebugListing("Camera Rotation:", ""+rotationRadians);
             Matrix rotationMatrix = Matrix.CreateRotationY(-rotationRadians);
             cameraOffset = new Vector3(5 * currentZoom, 5 * currentZoom, 0);
             Vector3 transformedReference = Vector3.Transform(cameraOffset, rotationMatrix);
@@ -86,6 +93,7 @@ namespace VoxelRPGGame.GameEngine.Rendering
             cameraViewMatrix = Matrix.CreateLookAt(cameraPosition, cameraTarget, Vector3.Up);
          //   cameraPosition = new Vector3((cameraTarget.X - (5 * currentZoom)), (cameraTarget.Y + (5 + (5 * currentZoom))), (cameraTarget.Z - (5 * currentZoom)));
             //cameraProjectionMatrix = Matrix.CreatePerspectiveFieldOfView(MathHelper.ToRadians(45.0f), graphics.Viewport.AspectRatio, 1.0f, 10000.0f);
+
         }
         public void RotateCamera(float movement)
         {
@@ -105,6 +113,9 @@ namespace VoxelRPGGame.GameEngine.Rendering
 
         public void HandleInput(InputState input)
         {
+
+            Temp_updateCount++;
+
             ButtonState currentMouseState=new ButtonState();
             ButtonState previousMouseState = new ButtonState(); ;
 
@@ -121,6 +132,7 @@ namespace VoxelRPGGame.GameEngine.Rendering
 
             if (currentMouseState == ButtonState.Pressed)
             {
+
                 ScreenManager.GetInstance().Game.IsMouseVisible = false;
                 //Only record position on click
                 if (previousMouseState == ButtonState.Released)
@@ -129,6 +141,8 @@ namespace VoxelRPGGame.GameEngine.Rendering
                 }
 
                 TEMP_mouseDelta = input.CurrentMouseState.X - TEMP_mouseClickPosition.X;
+                DebugScreen.GetInstance().SetDebugListing("Mouse Delta:", "" + TEMP_mouseDelta);
+
 
                 RotateCamera(TEMP_mouseDelta);
 
@@ -139,8 +153,13 @@ namespace VoxelRPGGame.GameEngine.Rendering
                         (targetObject as TEMPPlayerActor).Rotation = new Vector3((targetObject as TEMPPlayerActor).Rotation.X,-rotationRadians, (targetObject as TEMPPlayerActor).Rotation.Z);
                     }
                 }
-
-                Mouse.SetPosition((int)TEMP_mouseClickPosition.X, (int)TEMP_mouseClickPosition.Y);
+                //NOTE: Resetting this position is causing camera rotation to be jerky
+                //Don't reset every tick
+                //TEMPORARY SOLUTION - need proper way to make mouse rotation smooth
+                if (Temp_updateCount % 5== 0)
+                {
+                    Mouse.SetPosition((int)TEMP_mouseClickPosition.X, (int)TEMP_mouseClickPosition.Y);
+                }
             }
             else
             {
@@ -262,7 +281,10 @@ namespace VoxelRPGGame.GameEngine.Rendering
                 ZoomCameraOut();
             }
 
-
+            if(Temp_updateCount%60==0)
+            {
+                Temp_updateCount = 0;
+            }
         }
 
 
@@ -282,12 +304,12 @@ namespace VoxelRPGGame.GameEngine.Rendering
             }
         }
 
-        public void Draw()
+        public void Render(GraphicsDevice graphicsDevice)
         {
-            DrawCircle(cameraTarget, Color.Red);
+            DrawCircle(graphicsDevice,cameraTarget, Color.Red);
         }
 
-        protected void DrawCircle(Vector3 pos, Color c)
+        protected void DrawCircle(GraphicsDevice graphicsDevice,Vector3 pos, Color c)
         {
             VertexPositionColor[] selectionCircle = new VertexPositionColor[100];
             for (int i = 0; i < 99; i++)
@@ -298,12 +320,7 @@ namespace VoxelRPGGame.GameEngine.Rendering
             }
             selectionCircle[99] = selectionCircle[0];
 
-            ShaderManager.GetInstance().DefaultEffect.View = CameraViewMatrix;
-            ShaderManager.GetInstance().DefaultEffect.Projection = CameraProjectionMatrix;
-           ShaderManager.GetInstance().DefaultEffect.TextureEnabled = false;
-           ShaderManager.GetInstance().DefaultEffect.VertexColorEnabled = true;
-           ShaderManager.GetInstance().DefaultEffect.CurrentTechnique.Passes[0].Apply();
-            ScreenManager.GetInstance().GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.LineStrip, selectionCircle, 0, selectionCircle.Length - 1);
+          graphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.LineStrip, selectionCircle, 0, selectionCircle.Length - 1);
         }
 
         public void SoftLockToObject(AbstractWorldObject target)

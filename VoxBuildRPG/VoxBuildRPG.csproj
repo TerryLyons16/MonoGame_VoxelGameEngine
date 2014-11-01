@@ -71,13 +71,19 @@
     <Compile Include="Game Engine\Inventory System\IInventory.cs" />
     <Compile Include="Game Engine\Inventory System\Inventory.cs" />
     <Compile Include="Game Engine\Inventory System\InventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\PlayerInventory.cs" />
+    <Compile Include="Game Engine\Inventory System\Trade\ITradeableItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Trade\ITradeInventory.cs" />
     <Compile Include="Game Engine\Inventory System\ToolAbilityInventory.cs" />
     <Compile Include="Game Engine\Inventory System\EquippedToolInventory.cs" />
     <Compile Include="Game Engine\Inventory System\Tools\ToolInventoryItem.cs" />
     <Compile Include="Game Engine\Inventory System\Tools\WeaponInventoryItem.cs" />
+    <Compile Include="Game Engine\Inventory System\Trade\ShopTradeInterface.cs" />
+    <Compile Include="Game Engine\Inventory System\Trade\TradeInterface.cs" />
     <Compile Include="Game Engine\Physics\BlockCollisionFace.cs" />
     <Compile Include="Game Engine\Physics\CollisionBox.cs" />
     <Compile Include="Game Engine\Physics\CollisionFace.cs" />
+    <Compile Include="Game Engine\Rendering\IRenderable.cs" />
     <Compile Include="Game Engine\Rendering\Renderer.cs" />
     <Compile Include="Game Engine\Rendering\ShaderManager.cs" />
     <Compile Include="Game Engine\Subsystems [OLD]\Physics System\AbstractPhysicsObject.cs" />
@@ -95,19 +101,25 @@
     <Compile Include="Game Engine\Subsystems [OLD]\Resources\IGlobalResource.cs" />
     <Compile Include="Game Engine\Subsystems [OLD]\Resources\ILocalResource.cs" />
     <Compile Include="Game Engine\Rendering\Camera.cs" />
-    <Compile Include="Game Engine\Visualisation\3D Screen\GameWorldScreen[OLD].cs" />
+    <Compile Include="Game Engine\Visualisation\3D Screen [OLD]\GameWorldScreen[OLD].cs" />
     <Compile Include="Game Engine\Visualisation\AbstractDrawableGameObject.cs" />
     <Compile Include="Game Engine\Visualisation\AbstractRendererScreen.cs" />
     <Compile Include="Game Engine\Visualisation\GameplayScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\GameHUDScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventoryGridView.cs" />
-    <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventorySlot.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryListView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\AbilityInventorySlot.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\EquippedToolInventoryGridView.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryGridView.cs" />
-    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryItemView.cs" />
-    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventorySlot.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\InventoryItemView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\InventoryListItem.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\InventorySlot.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\ShopInventoryListItem.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\PlayerBackpackGridView.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\PlayerToolInventoryView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\Trade\ShopInterface.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\Trade\ShopInventroyListView.cs" />
     <Compile Include="Game Engine\Visualisation\UI\RendererTextElement.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Tooltips\InventoryItemTooltip.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Tooltips\Tooltip.cs" />
@@ -192,6 +204,9 @@
       <ProductName>Windows Installer 4.5</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

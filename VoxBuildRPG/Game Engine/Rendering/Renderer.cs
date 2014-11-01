@@ -58,46 +58,34 @@ namespace VoxBuildRPG.GameEngine.Rendering
 
 
 
-        public void Draw(SpriteBatch Batch, GameState state)
+        public void Render(SpriteBatch Batch, Camera activeCamera, List<IRenderable> renderItems)
         {
 
-            ShaderManager.GetInstance().DefaultEffect.View = state.ActiveCamera.CameraViewMatrix;
-            ShaderManager.GetInstance().DefaultEffect.Projection = state.ActiveCamera.CameraProjectionMatrix;
+            ShaderManager.GetInstance().DefaultEffect.View = activeCamera.CameraViewMatrix;
+            ShaderManager.GetInstance().DefaultEffect.Projection = activeCamera.CameraProjectionMatrix;
 
             ScreenManager.GetInstance().GraphicsDevice.DepthStencilState = DepthStencilState.Default;
             ScreenManager.GetInstance().GraphicsDevice.Clear(voidColour);
-            state.ActiveCamera.Draw();
 
-            //NOTE: Will need to split drawing into DrawRenderTargets and DrawObjects...
-        /*    foreach (AbstractWorldObject gameObject in state.GetRenderState())
-            {
-                if (gameObject.IsDrawable)
-                {
-                    gameObject.Draw(Batch, state.ActiveCamera);
-                }
-            }*/
+
+
+            ShaderManager.GetInstance().DefaultEffect.TextureEnabled = false;
+            ShaderManager.GetInstance().DefaultEffect.VertexColorEnabled = true;
+            ShaderManager.GetInstance().DefaultEffect.CurrentTechnique.Passes[0].Apply();
+            activeCamera.Render(ScreenManager.GetInstance().GraphicsDevice);
+
+
 
             ShaderManager.GetInstance().DefaultEffect.Texture = TextureAtlas.GetInstance().Atlas;
-
             ShaderManager.GetInstance().DefaultEffect.TextureEnabled = true;
             ShaderManager.GetInstance().DefaultEffect.VertexColorEnabled = false;
             ShaderManager.GetInstance().DefaultEffect.CurrentTechnique.Passes[0].Apply();
 
-                
-            foreach (Chunk c in state.GetChunks())
+            foreach (IRenderable renderItem in renderItems)
             {
-                ScreenManager.GetInstance().GraphicsDevice.SetVertexBuffer(c.VertexBuffer);
-                ScreenManager.GetInstance().GraphicsDevice.Indices = c.IndexBuffer;
-
-                DebugScreen.GetInstance().PolysDrawn += c.Indices.Length / 3;
-                DebugScreen.GetInstance().VertsDrawn += c.Vertices.Length;
-                if (c.Vertices.Length > 0)
-                {
-                    ScreenManager.GetInstance().GraphicsDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, c.Vertices.Length, 0, c.Indices.Length / 3);
-                }
-               // c.DrawChunk();
+                renderItem.Render(ScreenManager.GetInstance().GraphicsDevice);
             }
-
+                
         }
 
     }

@@ -1,8 +1,10 @@
 ﻿using Microsoft.Xna.Framework.Graphics;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using VoxelRPGGame.MenuSystem;
 
 namespace VoxelRPGGame.GameEngine.Rendering
 {
@@ -39,6 +41,15 @@ namespace VoxelRPGGame.GameEngine.Rendering
 
             return result;
         }
+
+        //Load shaders into memory
+        public void LoadShaders()
+        {
+        //    DepthNormal = ScreenManager.GetInstance().ContentManager.Load<Effect>("Effets/DepthNormal");
+         /*   BinaryReader Reader = new BinaryReader(File.Open(@"Content\\Effects\\output.mgfx", FileMode.Open));
+            DepthNormal = new Effect(ScreenManager.GetInstance().GraphicsDevice, Reader.ReadBytes((int)Reader.BaseStream.Length)); */
+        }
+
 
         public BasicEffect DefaultEffect
         {

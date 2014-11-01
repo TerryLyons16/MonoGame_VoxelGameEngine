@@ -36,6 +36,8 @@ namespace VoxelRPGGame.MenuSystem.Screens
             debugMenu.Add("Vertices Drawn: ", "" + PolysDrawn);
             debugMenu.Add("IsMouseVisible: ", ""+false);
             debugMenu.Add("Mouse Position:", "");
+            debugMenu.Add("Camera Rotation:", "");
+            debugMenu.Add("Mouse Delta:", "");
             isVisible = false;
             isActive = true;
             hasFocus = true;

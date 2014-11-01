@@ -235,7 +235,52 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
             return _items.Where(item => item!=null&&item.GetType() == type).ToList<InventoryItem>();
         }
 
+        public int QuantityCanAdd(InventoryItem item, int count)
+        {
+            int result = 0;
 
+            //If amount can be added as a single stack and there is space for that stack
+            if (!IsFull && count <= item.MaxStackSize)
+            {
+                result = count;
+            }
+
+            else if (item.IsStackable && ContainsItemOfType(item.GetType()))
+            {
+                Queue<InventoryItem> applicableStacks = new Queue<InventoryItem>(ItemsOfType(item.GetType()));
+                //Remove the amount that can be added too each existing stack from the total
+
+                int amountToFit = count;
+                while (applicableStacks.Count > 0)
+                {
+                    InventoryItem itemInInventory = applicableStacks.Dequeue();
+                    if (!itemInInventory.IsFull)
+                    {
+                        amountToFit -= itemInInventory.AvailableStockSpace;
+                    }
+                }
+
+                //If there is space for new stacks 
+                if ((HasMaxCapacity || MaxCapacity > 0) && FreeSpace>0)
+                {
+                    int freeSpace = FreeSpace;
+                    amountToFit -= (item.MaxStackSize * freeSpace);
+                }
+
+
+                if (amountToFit > 0)
+                {
+                    result = count - amountToFit;
+                }
+                else
+                {
+                    result = count;
+                }
+
+            }
+
+            return result;
+        }
         #region Properties
 
         public List<InventoryItem> Items
@@ -264,6 +309,24 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
                 }
                 return result;
 
+            }
+        }
+
+        protected int FreeSpace
+        {
+            get
+            {
+                int result = 0;
+
+                for (int i = 0; i < _items.Length; i++)
+                {
+                    if (_items[i] == null)
+                    {
+                        //If any space is null, then inventory not full
+                        result++;
+                    }
+                }
+                return result;
             }
         }
         #endregion

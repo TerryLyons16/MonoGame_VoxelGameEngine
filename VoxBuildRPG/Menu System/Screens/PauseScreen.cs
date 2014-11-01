@@ -29,7 +29,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
         public event EventHandler<EventArgs> Exit;
 
 
-        public PauseScreen(EventHandler<EventArgs> unpause)
+        public PauseScreen(VoxelRPGGame.MenuSystem.MenuElements.MenuElement.OnClick unpause)
             : base("Game Paused")
         {
   
@@ -59,19 +59,19 @@ namespace VoxelRPGGame.MenuSystem.Screens
         }
 
 
-        private void SetMenuElements(EventHandler<EventArgs> unpause)
+        private void SetMenuElements(VoxelRPGGame.MenuSystem.MenuElements.MenuElement.OnClick unpause)
         {
             TextElement Play = new TextElement("Play Game");
             // testButton.Position = new Vector2(graphics.Viewport.Width / 2, 150);
             Play.IsActive = true;
-            Play.Selected += unpause;
+            Play.OnClickEvent += unpause;
 
 
             elements.Add(Play);
 
             TextElement OptionMenuButton = new TextElement("Options");
             OptionMenuButton.IsActive = true;
-            OptionMenuButton.Selected += OptionMenu;
+            OptionMenuButton.OnClickEvent += OptionMenu;
 
             elements.Add(OptionMenuButton);
 
@@ -79,19 +79,19 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             TextElement exitGameButton = new TextElement("Exit Game");
             exitGameButton.IsActive = true;
-            exitGameButton.Selected += ExitGame;
+            exitGameButton.OnClickEvent += ExitGame;
 
             elements.Add(exitGameButton);
 
             setElementPositions_Centre(10);
         }
 
-        private void TEMP_SetSimulatorMenuElements(EventHandler<EventArgs> unpause)
+        private void TEMP_SetSimulatorMenuElements(VoxelRPGGame.MenuSystem.MenuElements.MenuElement.OnClick unpause)
         {
             ButtonElement Play = new ButtonElement();
             // testButton.Position = new Vector2(graphics.Viewport.Width / 2, 150);
             Play.IsActive = true;
-            Play.Selected += unpause;
+            Play.OnClickEvent += unpause;
             Play.ElementText = "Resume Simulation";
 
 
@@ -99,7 +99,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             ButtonElement OptionMenuButton = new ButtonElement();
             OptionMenuButton.IsActive = true;
-            OptionMenuButton.Selected += OptionMenu;
+            OptionMenuButton.OnClickEvent += OptionMenu;
             OptionMenuButton.ElementText = "Options";
 
             elements.Add(OptionMenuButton);
@@ -108,7 +108,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             ButtonElement exitGameButton = new ButtonElement();
             exitGameButton.IsActive = true;
-            exitGameButton.Selected += ExitGame;
+            exitGameButton.OnClickEvent += ExitGame;
             exitGameButton.ElementText = "Exit";
 
             elements.Add(exitGameButton);
@@ -184,7 +184,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
                 }
             }
         }*/
-        public void OptionMenu(object sender, EventArgs e)
+        public void OptionMenu(MenuElement element)
         {
             OnTransitionOut();
             ScreenManager.GetInstance().Game.IsMouseVisible = true;
@@ -235,7 +235,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
         }
 
 
-        public void ExitGame(object sender, EventArgs e)
+        public void ExitGame(MenuElement element)
         {
             //TEMP:Clear the chunk manager - will need to save on exit
             ChunkManager.Dispose();

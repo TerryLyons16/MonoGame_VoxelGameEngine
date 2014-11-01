@@ -14,6 +14,7 @@ using VoxelRPGGame.MenuSystem;
 using VoxelRPGGame.GameEngine.UI;
 using VoxelRPGGame.GameEngine.EnvironmentState;
 using VoxBuildRPG.GameEngine.Rendering;
+using VoxelRPGGame.MenuSystem.MenuElements;
 
 namespace VoxelRPGGame.GameEngine.UI
 {
@@ -63,6 +64,7 @@ namespace VoxelRPGGame.GameEngine.UI
             _hudScreen = GameHUDScreen.GetInstance(); //new GameHUDScreen();
             _gameState = new GameState(null, null, null);
             _renderer = new Renderer(ScreenManager.GetInstance().GraphicsDevice);
+        
             _hudScreen.InitializeElements();
         }
 
@@ -131,7 +133,7 @@ namespace VoxelRPGGame.GameEngine.UI
                 }
                 else
                 {
-                    PlayGame(this, new EventArgs());
+                    PlayGame(null);
                 }
 
             }
@@ -146,7 +148,7 @@ namespace VoxelRPGGame.GameEngine.UI
                     }
                     else
                     {
-                        PlayGame(this, new EventArgs());
+                        PlayGame(null);
                         isPaused = false;
                     }
                 }
@@ -191,7 +193,7 @@ namespace VoxelRPGGame.GameEngine.UI
             
                   }*/
 
-                _renderer.Draw(Batch, _gameState);
+                _renderer.Render(Batch, _gameState.ActiveCamera,_gameState.GetRenderState());
 
                 if (_hudScreen != null && _hudScreen.IsVisible)
                 {
@@ -216,7 +218,7 @@ namespace VoxelRPGGame.GameEngine.UI
         }
 
   
-        public void PlayGame(object sender, EventArgs e)
+        public void PlayGame(MenuElement element)
         {
             foreach (AbstractScreen s in ScreenManager.GetInstance().Screens)
             {

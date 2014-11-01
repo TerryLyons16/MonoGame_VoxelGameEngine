@@ -62,14 +62,14 @@ namespace VoxelRPGGame.MenuSystem.Screens
         {
             DebugOptions = new ButtonElement();
             DebugOptions.IsActive = true;
-            DebugOptions.Selected += ChangeDebugMenu;
+            DebugOptions.OnClickEvent += ChangeDebugMenu;
             DebugOptions.ElementText="Debug Menu  :  " + DebugScreen.GetInstance().IsVisible;
 
             elements.Add(DebugOptions);
 
             FullscreenOptions = new ButtonElement();
             FullscreenOptions.IsActive = true;
-            FullscreenOptions.Selected += ToggleFullscreen;
+            FullscreenOptions.OnClickEvent += ToggleFullscreen;
             FullscreenOptions.ElementText = "Fullscreen   :  " + ScreenManager.GetInstance().IsFullscreen;
 
             elements.Add(FullscreenOptions);
@@ -77,7 +77,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             ButtonElement exitMenuButton = new ButtonElement();
             exitMenuButton.IsActive = true;
-            exitMenuButton.Selected += Exit;
+            exitMenuButton.OnClickEvent += Exit;
             exitMenuButton.ElementText = "Back";
 
             elements.Add(exitMenuButton);
@@ -103,14 +103,14 @@ namespace VoxelRPGGame.MenuSystem.Screens
         {
             DebugOptions = new TextElement("Display Debug Menu  :  " + DebugScreen.GetInstance().IsVisible);
             DebugOptions.IsActive = true;
-            DebugOptions.Selected += ChangeDebugMenu;
+            DebugOptions.OnClickEvent += ChangeDebugMenu;
 
 
             elements.Add(DebugOptions);
 
             FullscreenOptions = new TextElement("Fullscreen   :  " + ScreenManager.GetInstance().IsFullscreen);
             FullscreenOptions.IsActive = true;
-            FullscreenOptions.Selected += ToggleFullscreen;
+            FullscreenOptions.OnClickEvent += ToggleFullscreen;
 
 
             elements.Add(FullscreenOptions);
@@ -118,7 +118,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             TextElement exitMenuButton = new TextElement("Back");
             exitMenuButton.IsActive = true;
-            exitMenuButton.Selected += Exit;
+            exitMenuButton.OnClickEvent += Exit;
 
 
             elements.Add(exitMenuButton);
@@ -161,14 +161,14 @@ namespace VoxelRPGGame.MenuSystem.Screens
         }
 
 #region Event Handlers
-        public void ChangeDebugMenu(object sender, EventArgs e)
+        public void ChangeDebugMenu(MenuElement element)
         {
             DebugScreen.GetInstance().IsVisible = !DebugScreen.GetInstance().IsVisible;
             DebugOptions.ElementText = "Display Debug Menu  :  " + DebugScreen.GetInstance().IsVisible;
             
         }
 
-        public void ToggleFullscreen(object sender, EventArgs e)
+        public void ToggleFullscreen(MenuElement element)
         {
             ScreenManager.GetInstance().ToggleFullscreen();
             FullscreenOptions.ElementText = "Fullscreen   :  " + ScreenManager.GetInstance().IsFullscreen;
@@ -177,9 +177,9 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
 
 
-        
 
-        public void Exit(object sender, EventArgs e)
+
+        public void Exit(MenuElement element)
         {
             
             ExitMenu(this, new EventArgs());

@@ -56,7 +56,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
         {
             TextElement playGameButton = new TextElement("New Game");
             playGameButton.IsActive = true;
-            playGameButton.Selected += NewGame;
+            playGameButton.OnClickEvent += NewGame;
           //  playGameButton.ElementText="New Simulation";
 
             elements.Add(playGameButton);
@@ -70,7 +70,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             TextElement OptionMenuButton = new TextElement("Options");
             OptionMenuButton.IsActive = true;
-            OptionMenuButton.Selected += OptionMenu;
+            OptionMenuButton.OnClickEvent += OptionMenu;
           //  OptionMenuButton.ElementText = "Options";
 
 
@@ -78,7 +78,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
 
             TextElement exitGameButton = new TextElement("Exit");
             exitGameButton.IsActive = true;
-            exitGameButton.Selected += ExitGame;
+            exitGameButton.OnClickEvent += ExitGame;
         //    exitGameButton.ElementText = "Exit";
 
             elements.Add(exitGameButton);
@@ -99,20 +99,20 @@ namespace VoxelRPGGame.MenuSystem.Screens
         {
             TextElement playGameButton = new TextElement("New Game");
             playGameButton.IsActive = true;
-            playGameButton.Selected += NewGame;
+            playGameButton.OnClickEvent += NewGame;
 
             elements.Add(playGameButton);
 
             TextElement OptionMenuButton = new TextElement("Options");
             OptionMenuButton.IsActive = true;
-            OptionMenuButton.Selected += OptionMenu;
+            OptionMenuButton.OnClickEvent += OptionMenu;
             
 
             elements.Add(OptionMenuButton);
 
             TextElement exitGameButton = new TextElement("Exit");
             exitGameButton.IsActive = true;
-            exitGameButton.Selected += ExitGame;
+            exitGameButton.OnClickEvent += ExitGame;
             
        
 
@@ -150,7 +150,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
         }
 
 #region Event Handlers
-        public void NewGame(object sender, EventArgs e)
+        public void NewGame(MenuElement element)
         {
             OnTransitionOut();
             ScreenManager.GetInstance().Game.IsMouseVisible = true;
@@ -198,7 +198,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
             
         }*/
 
-        public void OptionMenu(object sender, EventArgs e)
+        public void OptionMenu(MenuElement element)
         {
             OnTransitionOut();
             ScreenManager.GetInstance().Game.IsMouseVisible = true;
@@ -238,7 +238,7 @@ namespace VoxelRPGGame.MenuSystem.Screens
         }
 
 
-        public void ExitGame(object sender, EventArgs e)
+        public void ExitGame(MenuElement element)
         {
             ScreenManager.GetInstance().Game.Exit();
         }

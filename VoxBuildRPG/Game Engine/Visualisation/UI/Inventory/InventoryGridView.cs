@@ -17,18 +17,11 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
 
         protected Rectangle _boundingBox;
-        protected Vector2 _positionRelative;//position relative to whatever inventory it is in
-        protected Vector2 _positionAbsolute;//Position on screen it is drawn at
+       
         protected int _numCols;
 
 
-        public override Vector2 Position
-        {
-            get
-            {
-                return _positionAbsolute;
-            }
-        }
+     
 
         public override float Width
         {

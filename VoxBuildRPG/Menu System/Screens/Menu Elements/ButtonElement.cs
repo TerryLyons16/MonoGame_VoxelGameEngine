@@ -53,7 +53,7 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
             {
 
                 buttonClicked = false;
-                ElementSelected(this, new EventArgs());
+                OnElementClick();
 
                 //currentButton = ButtonIdle;
               

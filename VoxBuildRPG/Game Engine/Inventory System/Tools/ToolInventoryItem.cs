@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using VoxelRPGGame.GameEngine.InventorySystem.Trade;
 
 namespace VoxelRPGGame.GameEngine.InventorySystem.Tools
 {
@@ -44,7 +45,7 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Tools
     /// <summary>
     /// Any Item that can be wielded by the player
     /// </summary>
-    public class ToolInventoryItem: InventoryItem 
+    public class ToolInventoryItem: InventoryItem,ITradeableItem 
     {
         protected ToolType _toolType;
         protected EquipConstraint _equipConstraint;
@@ -91,5 +92,58 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Tools
                 return _equipConstraint;
             }
         }
+
+        #region Trade
+        public float BaseValue
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// The buy price for the customer (i.e. the player).
+        /// </summary>
+        public float CustomerBuyPrice
+        {
+            get;
+            set;
+        }
+
+        /// <summary>
+        /// The sell price for the customer (i.e. the player).
+        /// </summary>
+        public float CustomerSellPrice
+        {
+            get;
+            set;
+        }
+
+
+        public InventoryItem InventoryItem
+        {
+            get
+            {
+                return this;
+            }
+
+        }
+
+
+        public bool IsTradeable
+        {
+            get
+            {
+                if(_isQuestItem)
+                {
+                    return false;
+                }
+                else
+                {
+                    return true;
+                }
+            }
+              
+        }
+        #endregion
     }
 }

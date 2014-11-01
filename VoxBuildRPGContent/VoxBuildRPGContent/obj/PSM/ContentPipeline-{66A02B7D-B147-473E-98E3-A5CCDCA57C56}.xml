@@ -290,15 +290,6 @@
       <Time>2014-08-11T19:30:26.156179+01:00</Time>
     </Item>
     <Item>
-      <Source>SplashScreen.png</Source>
-      <Name>SplashScreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\SplashScreen.xnb</Output>
-      <Time>2014-08-11T19:30:26.3749454+01:00</Time>
-    </Item>
-    <Item>
       <Source>terrain.png</Source>
       <Name>terrain</Name>
       <Importer>TextureImporter</Importer>
@@ -326,13 +317,22 @@
       <Time>2014-08-11T19:30:26.2499793+01:00</Time>
     </Item>
     <Item>
-      <Source>Effects\Billboard.fx</Source>
-      <Name>Effects\Billboard</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
+      <Source>Textures\UI\TestIconBlock.png</Source>
+      <Name>Textures\UI\TestIconBlock</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb</Output>
-      <Time>2014-08-11T19:30:25.3434696+01:00</Time>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconBlock.xnb</Output>
+      <Time>2014-08-18T18:31:00.3673277+01:00</Time>
+    </Item>
+    <Item>
+      <Source>Textures\UI\TestIconTool.png</Source>
+      <Name>Textures\UI\TestIconTool</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconTool.xnb</Output>
+      <Time>2014-08-18T18:36:55.8291484+01:00</Time>
     </Item>
     <Item>
       <Source>Fonts\Font.spritefont</Source>
@@ -371,7 +371,7 @@
       <Time>2014-08-11T19:30:25.7809755+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\crate_0.xml</Key>
-        <Value>2014-08-14T18:00:52.0471335+01:00</Value>
+        <Value>2014-09-24T00:20:28.2518524+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb</Request>
     </Item>
@@ -385,7 +385,7 @@
       <Time>2014-08-11T19:30:25.8591006+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Factory_0.xml</Key>
-        <Value>2014-08-14T18:00:53.9778132+01:00</Value>
+        <Value>2014-09-24T00:20:29.8937426+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb</Request>
     </Item>
@@ -399,7 +399,7 @@
       <Time>2014-08-11T19:30:25.9059762+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Freelancer_0.xml</Key>
-        <Value>2014-08-14T18:00:54.5982125+01:00</Value>
+        <Value>2014-09-24T00:20:30.4011006+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb</Request>
     </Item>
@@ -413,7 +413,7 @@
       <Time>2014-08-11T19:30:25.9371996+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\GreenBox_0.xml</Key>
-        <Value>2014-08-14T18:00:54.7700916+01:00</Value>
+        <Value>2014-09-24T00:20:30.4941864+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox_0.xnb</Request>
     </Item>
@@ -427,7 +427,7 @@
       <Time>2014-08-11T19:30:26.0153269+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Node_0.xml</Key>
-        <Value>2014-08-14T18:00:55.5133393+01:00</Value>
+        <Value>2014-09-24T00:20:30.960499+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture_0.xnb</Request>
     </Item>
@@ -441,7 +441,7 @@
       <Time>2014-08-11T19:30:26.0622264+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\OrangeBox_0.xml</Key>
-        <Value>2014-08-14T18:00:56.1227223+01:00</Value>
+        <Value>2014-09-24T00:20:31.4999781+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox_0.xnb</Request>
     </Item>
@@ -455,7 +455,7 @@
       <Time>2014-08-11T19:30:26.0937274+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\PortalTile_0.xml</Key>
-        <Value>2014-08-14T18:00:56.5602479+01:00</Value>
+        <Value>2014-09-24T00:20:31.9573036+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb</Request>
     </Item>
@@ -469,7 +469,7 @@
       <Time>2014-08-11T19:30:26.1405546+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\RedBox_0.xml</Key>
-        <Value>2014-08-14T18:00:57.1071685+01:00</Value>
+        <Value>2014-09-24T00:20:32.4956857+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb</Request>
     </Item>
@@ -483,7 +483,7 @@
       <Time>2014-08-11T19:30:26.1718534+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\tile_0.xml</Key>
-        <Value>2014-08-14T18:00:57.5446941+01:00</Value>
+        <Value>2014-09-24T00:20:32.9179829+01:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb</Request>
     </Item>
@@ -695,31 +695,13 @@
       <Time>2014-08-11T19:30:26.1874781+01:00</Time>
     </Item>
     <Item>
-      <Source>Textures\UI\TestIconBlock.png</Source>
-      <Name>Textures\UI\TestIconBlock</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconBlock.xnb</Output>
-      <Time>2014-08-18T18:31:00.3673277+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Textures\UI\TestIconTool.png</Source>
-      <Name>Textures\UI\TestIconTool</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconTool.xnb</Output>
-      <Time>2014-08-18T18:36:55.8291484+01:00</Time>
-    </Item>
-    <Item>
-      <Source>Effects\DepthNormal.fx</Source>
-      <Name>Effects\DepthNormal</Name>
+      <Source>Effects\Billboard.fx</Source>
+      <Name>Effects\Billboard</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\DepthNormal.xnb</Output>
-      <Time>2014-09-23T21:27:59.5197201+01:00</Time>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb</Output>
+      <Time>2014-08-11T19:30:25.3434696+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

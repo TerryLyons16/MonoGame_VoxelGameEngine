@@ -10,7 +10,7 @@
     <RootNamespace>VoxBuildRPGContentContentContent</RootNamespace>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
-    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGamePlatform>Windows8</MonoGamePlatform>
     <OutputPath>bin\$(MonoGamePlatform)\$(Configuration)</OutputPath>
     <ContentRootDirectory>Content</ContentRootDirectory>
     <PlatformTarget>x86</PlatformTarget>
@@ -72,6 +72,7 @@
       <Name>Billboard</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
     <Compile Include="Fonts\MenuFontHighlighted.png">
       <Name>MenuFontHighlighted</Name>
@@ -213,11 +214,6 @@
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
     </Compile>
-    <Compile Include="SplashScreen.png">
-      <Name>SplashScreen</Name>
-      <Importer>TextureImporter</Importer>
-      <Processor>TextureProcessor</Processor>
-    </Compile>
     <Compile Include="terrain.png">
       <Name>terrain</Name>
       <Importer>TextureImporter</Importer>
@@ -312,11 +308,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Effects\DepthNormal.fx">
+    <Content Include="Effects\DepthNormal.fx">
       <Name>DepthNormal</Name>
       <Importer>EffectImporter</Importer>
       <Processor>EffectProcessor</Processor>
-    </Compile>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Effects\output.mgfx">
+      <Name>output</Name>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\$(XnaFrameworkVersion)\Microsoft.Xna.GameStudio.ContentPipeline.targets" />
   <!--

@@ -16,6 +16,7 @@ using VoxelRPGGame.GameEngine.World.Textures;
 using VoxelRPGGame.MenuSystem;
 using Microsoft.Xna.Framework.Content;
 using VoxelRPGGame.GameEngine.Rendering;
+using VoxBuildRPG.GameEngine.Rendering;
 
 namespace VoxelRPGGame.GameEngine.EnvironmentState
 {
@@ -129,6 +130,7 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
         /// </summary>
         public void Update()
         {
+            _camera.Update(Vector3.Zero);
             foreach (AbstractWorldObject gameObject in worldObjects)
             {
                 gameObject.Update();
@@ -158,7 +160,7 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
                 }
             }
 
-            _camera.Update(Vector3.Zero);
+       
 
 
                // SweepAndPrune();
@@ -179,7 +181,7 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
                     gameObject.HandleInput(gameTime, input);
                 }
             }
-          
+            
         }
 
         //Collision detection for perception squares
@@ -397,9 +399,9 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
         /// Gets all worldObjects (but not chunks) for the renderer
         /// </summary>
         /// <returns></returns>
-        public List<AbstractWorldObject> GetRenderState()
+        public List<IRenderable> GetRenderState()
         {
-            return worldObjects;
+            return GetChunks().ToList<IRenderable>();//worldObjects;
         }
         
         //NOTE: Very inefficient for rendering, do not use per frame

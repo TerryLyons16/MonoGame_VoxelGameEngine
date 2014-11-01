@@ -16,6 +16,12 @@ namespace VoxelRPGGame.GameEngine.UI
 
         protected UIElement _owner;
 
+
+
+        protected Vector2 _positionRelative;//position relative to whatever UIElement it is in
+        protected Vector2 _positionAbsolute;//Position on screen it is drawn at
+
+
         public abstract Vector2 Position
         {
             get;

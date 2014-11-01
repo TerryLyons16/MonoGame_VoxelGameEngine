@@ -184,6 +184,53 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
            return _items.Where(item => item.GetType() == type).ToList<InventoryItem>();
         }
 
+
+        public int QuantityCanAdd(InventoryItem item,int count)
+        {
+            int result = 0;
+           
+            //If amount can be added as a single stack and there is space for that stack
+            if(!IsFull&&count<=item.MaxStackSize)
+            {
+                result = count;
+            }
+
+            else if (item.IsStackable && ContainsItemOfType(item.GetType()))
+            {
+                Queue<InventoryItem> applicableStacks = new Queue<InventoryItem>(ItemsOfType(item.GetType()));
+                //Remove the amount that can be added too each existing stack from the total
+
+                int amountToFit = count;
+                while (applicableStacks.Count > 0)
+                {
+                    InventoryItem itemInInventory = applicableStacks.Dequeue();
+                    if (!itemInInventory.IsFull)
+                    {
+                        amountToFit -= itemInInventory.AvailableStockSpace;
+                    }
+                }
+
+                //If there is space for new stacks 
+                if ((HasMaxCapacity || _maxCapacity > 0) && (_items.Count < _maxCapacity))
+                {
+                    int freeSpace = _maxCapacity - _items.Count;
+                    amountToFit -= (item.MaxStackSize * freeSpace);
+                }
+
+
+                if (amountToFit > 0)
+                {
+                    result = count - amountToFit;
+                }
+                else
+                {
+                    result = count;
+                }
+
+            }
+
+            return result;
+        }
      
 #region Properties
 
@@ -200,9 +247,9 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
         {
             get
             {
-                if (!HasMaxCapacity || _maxCapacity == null)
+                if (!HasMaxCapacity || _maxCapacity <1)
                 {
-                    //Can never full if does not have a max capacity
+                    //Can never be full if does not have a max capacity
                     return false;
                 }
                 else

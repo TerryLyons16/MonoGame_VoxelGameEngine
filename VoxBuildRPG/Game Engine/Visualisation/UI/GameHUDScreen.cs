@@ -19,6 +19,8 @@ using VoxelRPGGame.GameEngine.UI.Inventory;
 using VoxelRPGGame.GameEngine.InventorySystem.Tools;
 using VoxelRPGGame.GameEngine.UI.Tooltips;
 using VoxelRPGGame.GameEngine.InventorySystem;
+using VoxelRPGGame.GameEngine.UI.Inventory.Trade;
+using VoxelRPGGame.GameEngine.InventorySystem.Trade;
 
 namespace VoxelRPGGame.GameEngine.UI
 {
@@ -37,7 +39,7 @@ namespace VoxelRPGGame.GameEngine.UI
         private float elapsedTime = 0.0f;
         private int ups = 0;
 
-        VoxelRPGGame.GameEngine.InventorySystem.Inventory tempInventory;
+        PlayerInventory playerInventory;
         VoxelRPGGame.GameEngine.InventorySystem.Inventory tempInventory2;
 
        
@@ -65,34 +67,52 @@ namespace VoxelRPGGame.GameEngine.UI
         private GameHUDScreen()
         {
             hasFocus = true;
+            isActive = true;
             _UIElements = new LinkedList<UIElement>();
         }
 
 
         public void InitializeElements()
         {
+            PlayerInventory shopInventory = new PlayerInventory(10);
+            shopInventory.Currency = 50;
 
-            tempInventory = new InventorySystem.Inventory(22);
-            tempInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
+            InventorySystem.Tools.ToolInventoryItem namedHammer1 = new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
+            namedHammer1.Rename("Hammerfell");
+            namedHammer1.CustomerBuyPrice = 10;
+            namedHammer1.CustomerSellPrice = 5;
+            namedHammer1.Rarity = Rarity.Rare;
+            shopInventory.AddItem(namedHammer1);
 
-            tempInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt,"Test",5));
-            tempInventory.AddItem(new InventorySystem.Abilities.Build.RemoveBlockAbility());
+
+            playerInventory = new PlayerInventory(22);
+            playerInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
+            playerInventory.Currency = 100;
+
+            playerInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt,"Test",5));
+            playerInventory.AddItem(new InventorySystem.Abilities.Build.RemoveBlockAbility());
 
             InventorySystem.Tools.ToolInventoryItem namedHammer = new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
             namedHammer.Rename("Hammer of Doom");
             namedHammer.Rarity = Rarity.Epic;
-            tempInventory.AddItem(namedHammer);
-            tempInventory.AddItem(new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.None));
-            tempInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt, "Test", 50));
+            playerInventory.AddItem(namedHammer);
+            playerInventory.AddItem(new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.None));
+            playerInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt, "Test", 50));
             tempInventory2 = new InventorySystem.Inventory(43);
            // tempInventory2.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
             
-            _UIElements.AddLast(new InventoryGridView(tempInventory, 4, new Vector2(ScreenManager.GetInstance().GraphicsDevice.Viewport.Width - 200, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height- 300)));
+            _UIElements.AddLast(new PlayerBackpackGridView(playerInventory, 4, new Vector2(ScreenManager.GetInstance().GraphicsDevice.Viewport.Width - 200, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height- 300)));
         //    _UIElements.Add(new InventoryGridView(tempInventory2, 6, new Vector2(200,300)));
 
             InventorySystem.CharacterInventory characterInventory = new InventorySystem.CharacterInventory();
             _UIElements.AddLast(new PlayerToolInventoryView(characterInventory.EquippedItems, new Vector2((ScreenManager.GetInstance().GraphicsDevice.Viewport.Width / 2) - 270, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height - 60)));
 
+
+            if (playerInventory is ITradeInventory)
+            {
+                _UIElements.AddLast(new ShopInterface(new Vector2(100, 100), (shopInventory as ITradeInventory), (playerInventory as ITradeInventory)) {HasFocus=true });
+
+            }
           /*  TickText = new TextElement("");
             TickText.Alpha = 1.0f;
             TickText.Font = ScreenManager.GetInstance().DefaultMenuFont;
@@ -152,7 +172,7 @@ namespace VoxelRPGGame.GameEngine.UI
 
             if (input.CurrentKeyboardState.IsKeyDown(Keys.O) && input.PreviousKeyboardState.IsKeyUp(Keys.O))
             {
-                tempInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
+                playerInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
             }
         /*    if (input.CurrentKeyboardState.IsKeyDown(Keys.P) && input.PreviousKeyboardState.IsKeyUp(Keys.P))
             {

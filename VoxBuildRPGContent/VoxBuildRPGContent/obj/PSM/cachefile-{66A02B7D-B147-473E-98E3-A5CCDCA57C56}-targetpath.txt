@@ -30,11 +30,11 @@ Content\Models\GrainFieldTexture.xnb
 Content\Models\HomeTexture.xnb
 Content\Models\NodeTexture.xnb
 Content\Models\ShopTexture.xnb
-Content\SplashScreen.xnb
 Content\terrain.xnb
 Content\Textures\UI\InventorySlot.xnb
 Content\Textures\UI\TestIcon.xnb
-Content\Effects\Billboard.xnb
+Content\Textures\UI\TestIconBlock.xnb
+Content\Textures\UI\TestIconTool.xnb
 Content\Fonts\Font.xnb
 Content\Fonts\MenuFont.xnb
 Content\Fonts\SimulatorFont.xnb
@@ -56,6 +56,7 @@ Content\Models\OrangeBox_0.xnb
 Content\Models\PortalTile_0.xnb
 Content\Models\RedBox_0.xnb
 Content\Models\tile_0.xnb
-Content\Textures\UI\TestIconBlock.xnb
-Content\Textures\UI\TestIconTool.xnb
-Content\Effects\DepthNormal.xnb
+Content\Effects\Billboard.xnb
+Content\Effects\DepthNormal.fx
+Content\Effects\Billboard.fx
+Content\Effects\output.mgfx

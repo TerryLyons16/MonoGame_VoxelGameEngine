@@ -42,6 +42,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
          bool HasMaxCapacity { get; }
          int MaxCapacity { get; }
 
+
+         int QuantityCanAdd(InventoryItem item, int quantity);
          bool IsFull { get; }
         #endregion
 

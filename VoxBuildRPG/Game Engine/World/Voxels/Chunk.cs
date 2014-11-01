@@ -10,6 +10,7 @@ using VoxelRPGGame.GameEngine.World.Building;
 using VoxelRPGGame.GameEngine.World.Textures;
 using VoxelRPGGame.GameEngine.Physics;
 using VoxelRPGGame.GameEngine.Rendering;
+using VoxBuildRPG.GameEngine.Rendering;
 
 
 namespace VoxelRPGGame.GameEngine.World.Voxels
@@ -18,7 +19,7 @@ namespace VoxelRPGGame.GameEngine.World.Voxels
     /// <summary>
     /// 3D Grid of Blocks
     /// </summary>
-    public class Chunk
+    public class Chunk : IRenderable
     {
         public delegate void OnBlockAdded(Vector2 chunkKey, int blockX, int blockY, int blockZ, AbstractBlock block);
         public event OnBlockAdded BlockAdded;
@@ -565,37 +566,51 @@ namespace VoxelRPGGame.GameEngine.World.Voxels
             return result;
         }
 
-        public void DrawChunk()
+        public void Render(GraphicsDevice graphicsDevice)
         {
-            ScreenManager.GetInstance().GraphicsDevice.SetVertexBuffer(vertexBuffer);
-            ScreenManager.GetInstance().GraphicsDevice.Indices = indexBuffer;
+            graphicsDevice.SetVertexBuffer(VertexBuffer);
+            graphicsDevice.Indices = IndexBuffer;
 
-            ShaderManager.GetInstance().DefaultEffect.Texture = TextureAtlas.GetInstance().Atlas;
-
-            ShaderManager.GetInstance().DefaultEffect.TextureEnabled = true;
-            ShaderManager.GetInstance().DefaultEffect.VertexColorEnabled = false;
-
-
-            /*  SamplerState ss = new SamplerState();
-              ss.AddressU = TextureAddressMode.Clamp;
-              ss.AddressV = TextureAddressMode.Clamp;
-          
-             ShaderManager.GetInstance().DefaultEffect.GraphicsDevice.SamplerStates[0] = ss;
-             *             ScreenManager.GetInstance().GraphicsDevice.SamplerStates[0] = SamplerState.AnisotropicClamp;
-              */
-            ShaderManager.GetInstance().DefaultEffect.CurrentTechnique.Passes[0].Apply();
-
-
-            //      DebugScreen.GetInstance().PolysDrawn = vertices.Length / 3;
-            //DebugScreen.GetInstance().PolysDrawn += indices.Length / 3;
-            //DebugScreen.GetInstance().VertsDrawn += vertices.Length;
-
-            //ScreenManager.GetInstance().GraphicsDevice.DrawPrimitives(PrimitiveType.TriangleList, 0, vertices.Length / 3);
-            if (vertices.Length > 0)
+            DebugScreen.GetInstance().PolysDrawn += Indices.Length / 3;
+            DebugScreen.GetInstance().VertsDrawn += Vertices.Length;
+            if (Vertices.Length > 0)
             {
-                ScreenManager.GetInstance().GraphicsDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, vertices.Length, 0, indices.Length / 3);
+                graphicsDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, Vertices.Length, 0, Indices.Length / 3);
             }
+
         }
+
+        //public void DrawChunk()
+        //{
+        //    ScreenManager.GetInstance().GraphicsDevice.SetVertexBuffer(vertexBuffer);
+        //    ScreenManager.GetInstance().GraphicsDevice.Indices = indexBuffer;
+
+        //    ShaderManager.GetInstance().DefaultEffect.Texture = TextureAtlas.GetInstance().Atlas;
+
+        //    ShaderManager.GetInstance().DefaultEffect.TextureEnabled = true;
+        //    ShaderManager.GetInstance().DefaultEffect.VertexColorEnabled = false;
+
+
+        //    /*  SamplerState ss = new SamplerState();
+        //      ss.AddressU = TextureAddressMode.Clamp;
+        //      ss.AddressV = TextureAddressMode.Clamp;
+          
+        //     ShaderManager.GetInstance().DefaultEffect.GraphicsDevice.SamplerStates[0] = ss;
+        //     *             ScreenManager.GetInstance().GraphicsDevice.SamplerStates[0] = SamplerState.AnisotropicClamp;
+        //      */
+        //    ShaderManager.GetInstance().DefaultEffect.CurrentTechnique.Passes[0].Apply();
+
+
+        //    //      DebugScreen.GetInstance().PolysDrawn = vertices.Length / 3;
+        //    //DebugScreen.GetInstance().PolysDrawn += indices.Length / 3;
+        //    //DebugScreen.GetInstance().VertsDrawn += vertices.Length;
+
+        //    //ScreenManager.GetInstance().GraphicsDevice.DrawPrimitives(PrimitiveType.TriangleList, 0, vertices.Length / 3);
+        //    if (vertices.Length > 0)
+        //    {
+        //        ScreenManager.GetInstance().GraphicsDevice.DrawIndexedPrimitives(PrimitiveType.TriangleList, 0, 0, vertices.Length, 0, indices.Length / 3);
+        //    }
+        //}
 
 
         public bool BuildBuffers()

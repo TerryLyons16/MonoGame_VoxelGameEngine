@@ -15,6 +15,7 @@ using System.Threading;
 using VoxelRPGGame.MenuSystem.MenuElements;
 using VoxelRPGGame.GameEngine;
 using VoxelRPGGame.GameEngine.UI;
+using VoxelRPGGame.GameEngine.Rendering;
 
 
 
@@ -124,8 +125,12 @@ namespace VoxelRPGGame.MenuSystem.Screens
             gameplayScreen.Pause += OnPause;
             gameplayScreen.Play += OnPlay;
             gameplayScreen.Initialise();
+
+
             Thread.Sleep(loadDisplayTime);
 
+            LoadingScreen.SetLoadingDetailText("Loading Shaders");
+            ShaderManager.GetInstance().LoadShaders();
 
 
             //Load graphics into the renderer

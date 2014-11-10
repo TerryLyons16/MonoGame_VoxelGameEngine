@@ -62,6 +62,17 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory.Trade
              }
          }
 
+         public override void Update(GameTime theTime, GameState state)
+         {
+             foreach (ShopInventoryListItem i in _inventoryList)
+             {
+                 if (i != null)
+                 {
+                     i.Update(theTime, state,_buyerInventoryModel);
+                 }
+             }
+         }
+
          public override void Draw(SpriteBatch Batch, GameState state)
          {
              base.Draw(Batch, state);
@@ -69,7 +80,8 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory.Trade
              {
                  Color nameColor = Color.White;
                  string money = "" + (_buyerInventoryModel as ITradeInventory).Currency;
-                 Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, money, new Vector2(Position.X, Position.Y + Height + 5), nameColor);
+                 float fontWidth = ScreenManager.GetInstance().DefaultMenuFont.MeasureString(money).X;
+                 Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, money, new Vector2(Position.X + Width - fontWidth, Position.Y + Height + 5), nameColor);
              }
          }
 

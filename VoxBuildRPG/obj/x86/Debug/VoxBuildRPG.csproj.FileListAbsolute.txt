@@ -57,6 +57,9 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\PortalTile_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\RedBox_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\tile_0.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Billboard.fx
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\DepthNormal.fx
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\output.mgfx
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.exe
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.pdb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\IgnoreMe.dll
@@ -83,6 +86,3 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.csprojResolveAssemblyReference.cache
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.exe
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.pdb
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Billboard.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\DepthNormal.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\output.mgfx

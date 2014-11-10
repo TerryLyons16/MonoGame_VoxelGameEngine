@@ -28,14 +28,15 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
         protected string _iconLocation;
 
         protected bool _isStackable;
-
-        protected int _maxStackSize;
+        protected bool _hasMaxStackSize=true;
+        protected int _maxStackSize=1;
         protected int _stock=1;//The amount of the item - will always be at least 1
 
         protected bool _isQuestItem;
 
-        public InventoryItem(string iconLocation)
+        public InventoryItem(string name,string iconLocation)
         {
+            _name = name;
             _iconLocation = iconLocation;
         }
 
@@ -178,8 +179,7 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
         /// <returns></returns>
         protected virtual InventoryItem CopyProperties()
         {
-            InventoryItem result = new InventoryItem(_iconLocation);
-            result._name = Name;
+            InventoryItem result = new InventoryItem(Name,_iconLocation);
             result._description = Description;
             result._isStackable = _isStackable;
             result._maxStackSize = _maxStackSize;
@@ -194,6 +194,14 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
             get
             {
                 return _isStackable;
+            }
+        }
+
+        public bool HasMaxStackSize
+        {
+            get
+            {
+                return _hasMaxStackSize;
             }
         }
 

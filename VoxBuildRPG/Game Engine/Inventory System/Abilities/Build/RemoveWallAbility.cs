@@ -13,9 +13,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Abilities.Build
     public class RemoveWallAbility: AbilityInventoryItem
     {
 
-        public RemoveWallAbility():base(null)
+        public RemoveWallAbility():base("Remove Wall",null)
         {
-            _name = "Remove Wall";
             _isStackable = false; ;
             _maxStackSize = 1;
             _stock = 1;

@@ -35,7 +35,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         /// </summary>
         private string _quantity;
 
-
+        protected bool _isDraggable = true;
         private InventorySlot _owner;
         protected Rectangle _boundingBox;
 
@@ -75,6 +75,11 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         }
 
+        public InventoryItemView(InventoryItem item, Vector2 position, InventorySlot owner,bool isDraggable):this(item,position,owner)
+        {
+            _isDraggable = isDraggable;
+        }
+
         public InventoryItemView(InventoryItem item, Vector2 position,InventorySlot owner)
         {
             RequestAddTooltipEvent += GameHUDScreen.GetInstance().AddTooltip;
@@ -103,7 +108,8 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
             if (_boundingBox.Contains(new Point(input.CurrentMouseState.X, input.CurrentMouseState.Y)) && input.IsMouseVisible)
             {
-                if (input.CurrentMouseState.LeftButton == ButtonState.Pressed&&input.PreviousMouseState.LeftButton==ButtonState.Released)
+
+                if (_isDraggable&&input.CurrentMouseState.LeftButton == ButtonState.Pressed&&input.PreviousMouseState.LeftButton==ButtonState.Released)
                 {
                     isBeingDragged = true;
                 }
@@ -132,44 +138,48 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
              
                
             }
-
-            if (input.CurrentMouseState.LeftButton == ButtonState.Released)
+            if (_isDraggable)
             {
-                if (isBeingDragged&&TEMPMouseOver != null)
+
+                if (input.CurrentMouseState.LeftButton == ButtonState.Released)
                 {
-                    ((InventoryView)TEMPMouseOver.Owner).RequestAddAt(this, TEMPMouseOver);
+                    if (isBeingDragged && TEMPMouseOver != null)
+                    {
+                        ((InventoryView)TEMPMouseOver.Owner).RequestAddAt(this, TEMPMouseOver);
+                    }
+
+                    isBeingDragged = false;
+                    _releasedPosition = new Vector2(_position.X, _position.Y);
+                    differenceX = (int)_releasedPosition.X - (int)_owner.PositionAbsolute.X;
+                    differenceY = (int)_releasedPosition.Y - (int)_owner.PositionAbsolute.Y;
+
                 }
 
-                isBeingDragged = false;
-                _releasedPosition = new Vector2(_position.X, _position.Y);
-                differenceX = (int)_releasedPosition.X - (int)_owner.PositionAbsolute.X;
-                differenceY = (int)_releasedPosition.Y - (int)_owner.PositionAbsolute.Y;
 
-            }
-
-            if (isBeingDragged)
-            {
-                OnRequestRemoveTooltip(_tooltip);
-                Vector2 currentPoint = new Vector2(input.CurrentMouseState.X, input.CurrentMouseState.Y);
-                Vector2 previousPoint = new Vector2(input.PreviousMouseState.X, input.PreviousMouseState.Y);
-
-                _position.X = _position.X + (currentPoint.X - previousPoint.X);
-                _position.Y = _position.Y + (currentPoint.Y - previousPoint.Y);
-                _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40,40);
-
-            }
-            else
-            {
-
-              
-                _position.X -=(int)(differenceX );
-                _position.Y -= (int)(differenceY );
-                _boundingBox = new Rectangle((int)_position.X, (int)_position.Y,40, 40);
-
-                if (_position == _owner.PositionAbsolute)
+                if (isBeingDragged)
                 {
-                    differenceX = 0;
-                    differenceY = 0;
+                    OnRequestRemoveTooltip(_tooltip);
+                    Vector2 currentPoint = new Vector2(input.CurrentMouseState.X, input.CurrentMouseState.Y);
+                    Vector2 previousPoint = new Vector2(input.PreviousMouseState.X, input.PreviousMouseState.Y);
+
+                    _position.X = _position.X + (currentPoint.X - previousPoint.X);
+                    _position.Y = _position.Y + (currentPoint.Y - previousPoint.Y);
+                    _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40, 40);
+
+                }
+                else
+                {
+
+
+                    _position.X -= (int)(differenceX);
+                    _position.Y -= (int)(differenceY);
+                    _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40, 40);
+
+                    if (_position == _owner.PositionAbsolute)
+                    {
+                        differenceX = 0;
+                        differenceY = 0;
+                    }
                 }
             }
 

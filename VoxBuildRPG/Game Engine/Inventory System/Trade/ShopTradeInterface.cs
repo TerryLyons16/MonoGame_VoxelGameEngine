@@ -44,14 +44,18 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Trade
                 else
                 {
                     quantityBuyerCanAfford = (int)(customer.Currency / unitPrice);
+                    if(customer.Currency<=0)
+                    {
+                        quantityBuyerCanAfford = 0;
+                    }
                 }
 
                 float actualBuyPrice = unitPrice * quantityBuyerCanAfford;
 
                 if (customer.Currency >= actualBuyPrice && quantityBuyerCanCarry>0)
                 {
-                    customer.Currency -= totalBuyPrice;
-                    shop.Currency += totalBuyPrice;
+                    customer.Currency -= actualBuyPrice;
+                    shop.Currency += actualBuyPrice;
                     InventoryItem buyerItem = item.InventoryItem.SplitStack(quantityBuyerCanAfford);
                     customer.AddItem(buyerItem);
                 }

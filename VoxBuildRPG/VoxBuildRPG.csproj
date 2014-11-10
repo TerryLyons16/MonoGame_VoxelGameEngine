@@ -107,6 +107,7 @@
     <Compile Include="Game Engine\Visualisation\GameplayScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\GameHUDScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventoryGridView.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryItemDisplayUtilities.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\InventoryListView.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\ItemViews\AbilityInventorySlot.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\EquippedToolInventoryGridView.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Game Engine\Visualisation\UI\RendererTextElement.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Tooltips\InventoryItemTooltip.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Tooltips\Tooltip.cs" />
+    <Compile Include="Game Engine\Visualisation\UI\UI Components\QuantitySelector.cs" />
     <Compile Include="Game Engine\Visualisation\UI\UIElement.cs" />
     <Compile Include="Game Engine\World\AbstractActor.cs" />
     <Compile Include="Game Engine\World\AbstractTerrainObject.cs" />

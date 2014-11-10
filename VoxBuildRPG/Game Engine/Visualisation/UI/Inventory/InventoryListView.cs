@@ -65,7 +65,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         public override void HandleInput(GameTime gameTime, InputState input, GameState state)
         {
-            foreach (InventorySlot i in _inventoryList)
+            foreach (InventoryListItem i in _inventoryList)
             {
                 if (i != null)
                 {
@@ -77,7 +77,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         public override void Update(GameTime theTime, GameState state)
         {
-            foreach (InventorySlot i in _inventoryList)
+            foreach (InventoryListItem i in _inventoryList)
             {
                 if (i != null)
                 {
@@ -88,7 +88,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         public override void Draw(SpriteBatch Batch, GameState state)
         {
-            foreach (InventorySlot i in _inventoryList)
+            foreach (InventoryListItem i in _inventoryList)
             {
                 if (i != null)
                 {

@@ -35,7 +35,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Abilities
 
         protected List<ToolType> _allowedTools;
 
-        public AbilityInventoryItem(string iconLocation):base(iconLocation)
+        public AbilityInventoryItem(string name, string iconLocation)
+            : base(name,iconLocation)
         {
             _allowedTools = new List<ToolType>();
 

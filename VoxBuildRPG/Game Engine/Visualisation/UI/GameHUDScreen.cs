@@ -21,6 +21,7 @@ using VoxelRPGGame.GameEngine.UI.Tooltips;
 using VoxelRPGGame.GameEngine.InventorySystem;
 using VoxelRPGGame.GameEngine.UI.Inventory.Trade;
 using VoxelRPGGame.GameEngine.InventorySystem.Trade;
+using VoxelRPGGame.GameEngine.UI.UIComponents;
 
 namespace VoxelRPGGame.GameEngine.UI
 {
@@ -77,8 +78,7 @@ namespace VoxelRPGGame.GameEngine.UI
             PlayerInventory shopInventory = new PlayerInventory(10);
             shopInventory.Currency = 50;
 
-            InventorySystem.Tools.ToolInventoryItem namedHammer1 = new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
-            namedHammer1.Rename("Hammerfell");
+            InventorySystem.Tools.ToolInventoryItem namedHammer1 = new InventorySystem.Tools.ToolInventoryItem("Hammerfell",InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
             namedHammer1.CustomerBuyPrice = 10;
             namedHammer1.CustomerSellPrice = 5;
             namedHammer1.Rarity = Rarity.Rare;
@@ -86,17 +86,19 @@ namespace VoxelRPGGame.GameEngine.UI
 
 
             playerInventory = new PlayerInventory(22);
-            playerInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
+            playerInventory.AddItem(new InventorySystem.InventoryItem("Test","Textures\\UI\\TestIcon"));
             playerInventory.Currency = 100;
 
             playerInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt,"Test",5));
             playerInventory.AddItem(new InventorySystem.Abilities.Build.RemoveBlockAbility());
 
-            InventorySystem.Tools.ToolInventoryItem namedHammer = new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
-            namedHammer.Rename("Hammer of Doom");
+            InventorySystem.Tools.ToolInventoryItem namedHammer = new InventorySystem.Tools.ToolInventoryItem("Hammer of Doom",InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.Secondary);
             namedHammer.Rarity = Rarity.Epic;
+            namedHammer.BaseValue = 20;
+            namedHammer.CustomerBuyPrice = 35;
+            namedHammer.CustomerSellPrice = 15;
             playerInventory.AddItem(namedHammer);
-            playerInventory.AddItem(new InventorySystem.Tools.ToolInventoryItem(InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.None));
+            playerInventory.AddItem(new InventorySystem.Tools.ToolInventoryItem("Iron Hammer",InventorySystem.Tools.ToolType.Hammer, "Textures\\UI\\TestIconTool", EquipConstraint.None) { Rarity = Rarity.Common, BaseValue = 5, CustomerSellPrice = 4,CustomerBuyPrice=6});
             playerInventory.AddItem(new InventorySystem.Abilities.Build.BlockInventoryItem(GameEngine.World.Voxels.MaterialType.Dirt, "Test", 50));
             tempInventory2 = new InventorySystem.Inventory(43);
            // tempInventory2.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
@@ -113,6 +115,8 @@ namespace VoxelRPGGame.GameEngine.UI
                 _UIElements.AddLast(new ShopInterface(new Vector2(100, 100), (shopInventory as ITradeInventory), (playerInventory as ITradeInventory)) {HasFocus=true });
 
             }
+
+         
           /*  TickText = new TextElement("");
             TickText.Alpha = 1.0f;
             TickText.Font = ScreenManager.GetInstance().DefaultMenuFont;
@@ -172,7 +176,7 @@ namespace VoxelRPGGame.GameEngine.UI
 
             if (input.CurrentKeyboardState.IsKeyDown(Keys.O) && input.PreviousKeyboardState.IsKeyUp(Keys.O))
             {
-                playerInventory.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
+                playerInventory.AddItem(new InventorySystem.InventoryItem("Test","Textures\\UI\\TestIcon"));
             }
         /*    if (input.CurrentKeyboardState.IsKeyDown(Keys.P) && input.PreviousKeyboardState.IsKeyUp(Keys.P))
             {

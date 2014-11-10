@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using VoxelRPGGame.GameEngine.EnvironmentState;
 using VoxelRPGGame.GameEngine.InventorySystem;
+using VoxelRPGGame.GameEngine.InventorySystem.Trade;
 using VoxelRPGGame.GameEngine.UI.Inventory;
 using VoxelRPGGame.MenuSystem;
 
@@ -70,41 +71,43 @@ namespace VoxelRPGGame.GameEngine.UI.Tooltips
 
         public override void Draw(SpriteBatch Batch, GameState state)
         {
+            Vector2 nameMeasurements = ScreenManager.GetInstance().DefaultMenuFont.MeasureString(_inventoryItem.Name);
+            Vector2 valuePosition = new Vector2(Position.X + _namePositionOffset.X, Position.Y + _namePositionOffset.Y + nameMeasurements.Y);
             // Batch.Draw(_icon, _boundingBox, Color.White);
-            BuildTooltip();
-
+            BuildTooltip(nameMeasurements.X,valuePosition.Y-Position.Y);
             Batch.Draw(_background, Position, Color.White);
+           
 
-            Color nameColor = Color.White;
+            Color nameColor = InventoryItemDisplayUtilities.GetItemRarityColour(_inventoryItem.Rarity);
 
-            switch(_inventoryItem.Rarity)
+            Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, "" + _inventoryItem.Name, Position+_padding + _namePositionOffset, nameColor);
+
+            if(_inventoryItem is ITradeableItem)
             {
-                case Rarity.Epic:
-                    {
-                        nameColor = Color.Orange;
-                        break;
-                    }
+                string value = ""+(_inventoryItem as ITradeableItem).BaseValue;
+                Color valueColour = Color.White;
+              
+                Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, value, valuePosition+_padding, valueColour);
+
             }
-
-            Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, "" + _inventoryItem.Name, Position + _namePositionOffset, nameColor);
-
+        
         }
 
 
-        protected void BuildTooltip()
+        protected void BuildTooltip(float width, float height)
         {
             _mousePosition = new Vector2(GameWorldControlState.GetInstance().InputState.CurrentMouseState.X, GameWorldControlState.GetInstance().InputState.CurrentMouseState.Y);
 
-            float height = 0;
+         /*   float height = 0;
             float width = 0;//Use the width of the longest string
             _namePositionOffset = new Vector2(_padding.X, _padding.Y);
             Vector2 nameMeasurement = ScreenManager.GetInstance().DefaultMenuFont.MeasureString("" + _inventoryItem.Name);
             width = nameMeasurement.X;
-            height += nameMeasurement.Y;
+            height += nameMeasurement.Y;*/
 
 
 
-            _boundingBox = new Rectangle(0, 0, (int)(width + _padding.X * 2), (int)(height+_padding.Y * 2));
+            _boundingBox = new Rectangle(0, 0, (int)(width + _padding.X * 5), (int)(height+_padding.Y * 5));
 
 
             _background = new Texture2D(ScreenManager.GetInstance().GraphicsDevice, _boundingBox.Width, _boundingBox.Height);

@@ -190,44 +190,49 @@ namespace VoxelRPGGame.GameEngine.InventorySystem
             int result = 0;
            
             //If amount can be added as a single stack and there is space for that stack
-            if(!IsFull&&count<=item.MaxStackSize)
-            {
-                result = count;
-            }
 
-            else if (item.IsStackable && ContainsItemOfType(item.GetType()))
-            {
-                Queue<InventoryItem> applicableStacks = new Queue<InventoryItem>(ItemsOfType(item.GetType()));
-                //Remove the amount that can be added too each existing stack from the total
-
-                int amountToFit = count;
-                while (applicableStacks.Count > 0)
+                if(!IsFull&&!item.HasMaxStackSize)
                 {
-                    InventoryItem itemInInventory = applicableStacks.Dequeue();
-                    if (!itemInInventory.IsFull)
+                    return count;
+                }
+                else if (!IsFull&&count <= item.MaxStackSize)
+                {
+                    return count;
+                }
+
+                else if (item.IsStackable && ContainsItemOfType(item.GetType()))
+                {
+                    Queue<InventoryItem> applicableStacks = new Queue<InventoryItem>(ItemsOfType(item.GetType()));
+                    //Remove the amount that can be added too each existing stack from the total
+
+                    int amountToFit = count;
+                    while (applicableStacks.Count > 0)
                     {
-                        amountToFit -= itemInInventory.AvailableStockSpace;
+                        InventoryItem itemInInventory = applicableStacks.Dequeue();
+                        if (!itemInInventory.IsFull)
+                        {
+                            amountToFit -= itemInInventory.AvailableStockSpace;
+                        }
                     }
-                }
 
-                //If there is space for new stacks 
-                if ((HasMaxCapacity || _maxCapacity > 0) && (_items.Count < _maxCapacity))
-                {
-                    int freeSpace = _maxCapacity - _items.Count;
-                    amountToFit -= (item.MaxStackSize * freeSpace);
-                }
+                    //If there is space for new stacks 
+                    if ((HasMaxCapacity || _maxCapacity > 0) && (_items.Count < _maxCapacity))
+                    {
+                        int freeSpace = _maxCapacity - _items.Count;
+                        amountToFit -= (item.MaxStackSize * freeSpace);
+                    }
 
 
-                if (amountToFit > 0)
-                {
-                    result = count - amountToFit;
-                }
-                else
-                {
-                    result = count;
-                }
+                    if (amountToFit > 0)
+                    {
+                        result = count - amountToFit;
+                    }
+                    else
+                    {
+                        result = count;
+                    }
 
-            }
+                }
 
             return result;
         }

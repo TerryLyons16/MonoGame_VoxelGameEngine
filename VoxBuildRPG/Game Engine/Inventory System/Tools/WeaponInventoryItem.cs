@@ -11,8 +11,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Tools
 
         protected float _range;//? Is this correct?
 
-        public WeaponInventoryItem(ToolType type,string iconLocation,EquipConstraint tempEquipConstraint)
-            : base(type, iconLocation, tempEquipConstraint)
+        public WeaponInventoryItem(string name,ToolType type,string iconLocation,EquipConstraint tempEquipConstraint)
+            : base(name,type, iconLocation, tempEquipConstraint)
         {
 
         }

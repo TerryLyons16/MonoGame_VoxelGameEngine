@@ -15,9 +15,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Abilities.Build
         protected MaterialType _wallType;
 
 
-        public WallInventoryItem(MaterialType wallType, string description, int quantity):base(null)
+        public WallInventoryItem(MaterialType wallType, string description, int quantity):base(wallType+" Wall",null)
         {
-           _name = wallType+" Wall";
             _description = description;
             _stock = quantity;
             _numUses = _stock;//Any time quantity changes, _numUses must change

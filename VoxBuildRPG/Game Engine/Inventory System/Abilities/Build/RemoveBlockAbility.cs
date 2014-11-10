@@ -12,9 +12,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Abilities.Build
     {
 
         public RemoveBlockAbility()
-            : base("Textures\\UI\\TestIcon")
+            : base("Remove Block","Textures\\UI\\TestIcon")
         {
-            _name = "Remove Block";
             _isStackable = false; ;
             _maxStackSize = 1;
             _stock = 1;

@@ -15,13 +15,28 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         protected Vector2 _namePositionOffset = new Vector2(10,0);
 
+        public override float Width
+        {
+            get
+            {
+                return base.Width + _namePositionOffset.X + ScreenManager.GetInstance().DefaultMenuFont.MeasureString(_inventoryItem.InventoryItem.Name).X;
+            }
+        }
+
+        public override float Height
+        {
+            get
+            {
+                return base.Height + _namePositionOffset.Y + ScreenManager.GetInstance().DefaultMenuFont.MeasureString(_inventoryItem.InventoryItem.Name).Y;
+            }
+        }
+
         public InventoryListItem(Vector2 positionAbsolute, InventoryView owner,InventoryItem item)
             : base(positionAbsolute, owner)
         {
-            _inventoryItem = new Inventory.InventoryItemView(item, _positionAbsolute, this);
+            _inventoryItem = new Inventory.InventoryItemView(item, _positionAbsolute, this,false);
             _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 100, 50);
         }
-
 
 
         public override void Draw(SpriteBatch Batch, GameState state)
@@ -31,7 +46,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                 _inventoryItem.Draw(Batch, state);
             }
 
-            Color nameColor = Color.White;
+            Color nameColor = InventoryItemDisplayUtilities.GetItemRarityColour(_inventoryItem.InventoryItem.Rarity);
 
 
           //  Batch.Draw(_slotTexture, _boundingBox, TEMPCOLOR);

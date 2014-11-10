@@ -27,7 +27,7 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
         bool buttonClicked = false;
 
 
-        private SpriteFont idleFont,highlightedFont;
+        private SpriteFont _idleFont,_highlightedFont;
 
         protected Vector2 textScale = new Vector2(1, 1);
 
@@ -40,9 +40,26 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
 
 
             alpha = 1;
-            idleFont =  ScreenManager.GetInstance().ContentManager.Load<SpriteFont>("Fonts\\SimulatorFont");
-            highlightedFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>("Fonts\\SimulatorFont");
-            textFont = idleFont; 
+            _idleFont =  ScreenManager.GetInstance().ContentManager.Load<SpriteFont>("Fonts\\SimulatorFont");
+            _highlightedFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>("Fonts\\SimulatorFont");
+            textFont = _idleFont; 
+            elementText = text;
+            isActive = false;
+            boundingBox = new Rectangle((int)position.X, (int)position.Y, (int)textFont.MeasureString(elementText).X, (int)textFont.MeasureString(elementText).Y);
+        }
+
+        public TextElement(string text, SpriteFont idleFont, SpriteFont highlightedFont)
+        {
+           _idleFont = idleFont;
+            textFont = idleFont;
+            _highlightedFont = highlightedFont;
+
+            textAlignment = TextAlign.Centre;
+
+
+            alpha = 1;
+           
+            textFont = idleFont;
             elementText = text;
             isActive = false;
             boundingBox = new Rectangle((int)position.X, (int)position.Y, (int)textFont.MeasureString(elementText).X, (int)textFont.MeasureString(elementText).Y);
@@ -51,9 +68,9 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
         public TextElement(string text,string idleFontName, string highlightedFontName)
         {
 
-            idleFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>(idleFontName);
-            highlightedFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>(highlightedFontName);
-            textFont = idleFont;
+            _idleFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>(idleFontName);
+            _highlightedFont = ScreenManager.GetInstance().ContentManager.Load<SpriteFont>(highlightedFontName);
+            textFont = _idleFont;
             elementText = text;
             isActive = false;
             boundingBox = new Rectangle((int)position.X, (int)position.Y, (int)textFont.MeasureString(elementText).X, (int)textFont.MeasureString(elementText).Y);
@@ -97,14 +114,14 @@ namespace VoxelRPGGame.MenuSystem.MenuElements
             if (!buttonClicked&&isHighlighted)
             {
                 textColor = Color.White;
-                textFont = highlightedFont;
+                textFont = _highlightedFont;
                // SetComponentScale(1.2f, 1.2f);
             }
 
             else if (!buttonClicked && !isHighlighted)
             {
                 textColor = Color.White;
-                textFont = idleFont;
+                textFont = _idleFont;
                // SetComponentScale(1f, 1f);
             }
         }

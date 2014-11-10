@@ -53,8 +53,8 @@ namespace VoxelRPGGame.GameEngine.InventorySystem.Tools
         protected int _minDamage;
         protected int _maxDamage;
 
-        public ToolInventoryItem(ToolType type,string iconLocation,EquipConstraint tempEquipConstraint)
-            : base(iconLocation)
+        public ToolInventoryItem(String name,ToolType type,string iconLocation,EquipConstraint tempEquipConstraint)
+            : base(name,iconLocation)
         {
             _equipConstraint = tempEquipConstraint;
             _toolType = type;

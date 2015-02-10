@@ -16,13 +16,14 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         protected int _slotNumber;
         protected bool _isActiveAbility = false;
 
-        public AbilityInventorySlot(Vector2 TEMPposition, InventoryView owner, int number):base(TEMPposition,owner)
+        public AbilityInventorySlot(Vector2 positionRelative, Vector2 ParentPosition, InventoryView owner, int number)
+            : base(positionRelative, ParentPosition, owner)
         {
             _slotNumber = number;
             IsActive = true;
         }
-        public AbilityInventorySlot(Vector2 TEMPposition, InventoryItem item, InventoryView owner, int number)
-            : base(TEMPposition, item, owner)
+        public AbilityInventorySlot(Vector2 positionRelative, Vector2 ParentPosition, InventoryItem item, InventoryView owner, int number)
+            : base(positionRelative, ParentPosition, item, owner)
         {
             _slotNumber = number;
         }

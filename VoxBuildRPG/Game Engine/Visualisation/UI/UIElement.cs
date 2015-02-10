@@ -9,7 +9,7 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace VoxelRPGGame.GameEngine.UI
 {
-    public abstract class UIElement : AbstractRendererScreen
+    public abstract class UIElement : AbstractHUDElement
     {
         public delegate void MoveToFrontRequest(UIElement element);
         public event MoveToFrontRequest MoveToFrontRequestEvent; 

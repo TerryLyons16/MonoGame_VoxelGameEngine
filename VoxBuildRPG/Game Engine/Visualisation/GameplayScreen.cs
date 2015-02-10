@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
+
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -66,6 +66,8 @@ namespace VoxelRPGGame.GameEngine.UI
             _renderer = new Renderer(ScreenManager.GetInstance().GraphicsDevice);
         
             _hudScreen.InitializeElements();
+
+            _hudScreen.IsVisible = false;
         }
 
        // public GameplayScreen(GameHUDScreen hud/*, GameWorldScreen world, bool useRenderer*/)

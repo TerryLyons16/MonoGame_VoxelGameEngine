@@ -35,7 +35,6 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIcon.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIconBlock.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Textures\UI\TestIconTool.xnb
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Billboard.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\Font.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\MenuFont.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Fonts\SimulatorFont.xnb
@@ -48,6 +47,7 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\PortalTile.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\RedBox.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\tile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\sphere.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\Crate_texture_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\HomeTexture_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\char_0.xnb
@@ -57,9 +57,10 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\PortalTile_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\RedBox_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\tile_0.xnb
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Billboard.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\DepthNormal.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\output.mgfx
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\DepthNormal.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\AmbientLight.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Test.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\Lightmap.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.exe
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\VoxBuildRPG.pdb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\IgnoreMe.dll
@@ -70,10 +71,10 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D11.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.DXGI.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct2D1.dll
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Lidgren.Network.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XInput.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.RawInput.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\MonoGame.Framework.xml
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.MediaFoundation.xml
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.xml
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\SharpDX.XAudio2.xml
@@ -86,3 +87,6 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.csprojResolveAssemblyReference.cache
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.exe
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\obj\x86\Debug\VoxBuildRPG.pdb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\PointLight.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Effects\PointLightmapTEST.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPG\bin\Windows\Debug\Content\Models\sphere1.xnb

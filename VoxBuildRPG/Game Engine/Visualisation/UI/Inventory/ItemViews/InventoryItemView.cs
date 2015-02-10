@@ -28,7 +28,6 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         /// The InventoryItem data object that the view is displaying i.e. the "owner" of the view
         /// </summary>
         private InventoryItem _inventoryItem;
-        private Vector2 _position;
         private Texture2D _icon;
         /// <summary>
         /// Used to display amount when item has a count
@@ -53,7 +52,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         {
             get
             {
-                return _position;
+                return _positionAbsolute;
             }
 
         }
@@ -75,29 +74,36 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         }
 
-        public InventoryItemView(InventoryItem item, Vector2 position, InventorySlot owner,bool isDraggable):this(item,position,owner)
+        public InventoryItemView(InventoryItem item, Vector2 positionRelative, Vector2 parentPosition, InventorySlot owner, bool isDraggable)
+            : this(item, positionRelative, parentPosition, owner)
         {
             _isDraggable = isDraggable;
         }
 
-        public InventoryItemView(InventoryItem item, Vector2 position,InventorySlot owner)
+        public InventoryItemView(InventoryItem item, Vector2 positionRelative,Vector2 parentPosition,InventorySlot owner)
         {
             RequestAddTooltipEvent += GameHUDScreen.GetInstance().AddTooltip;
             RequestRemoveTooltipEvent += GameHUDScreen.GetInstance().RemoveTooltip;
 
             _owner = owner;
-            _position = new Vector2(position.X,position.Y);
-            _releasedPosition = new Vector2(_position.X, _position.Y);
+            _positionRelative = positionRelative;
+            _positionAbsolute = positionRelative + parentPosition;
+            _releasedPosition = new Vector2(_positionAbsolute.X, _positionAbsolute.Y);
             _inventoryItem = item;
 
             _icon = ScreenManager.GetInstance().ContentManager.Load<Texture2D>(_inventoryItem.IconLocation);
            // _icon = ScreenManager.GetInstance().ContentManager.Load<Texture2D>("Textures\\UI\\TestIcon");
 
-            _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40,40);
+            _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 40, 40);
         }
 
         public override void Update(GameTime theTime, GameState state)
         {
+        }
+
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+            _positionAbsolute = _positionRelative + parentPosition;
         }
 
         //  public virtual void HandleInput(GameTime gameTime, InputState input) { }
@@ -149,7 +155,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                     }
 
                     isBeingDragged = false;
-                    _releasedPosition = new Vector2(_position.X, _position.Y);
+                    _releasedPosition = new Vector2(_positionAbsolute.X, _positionAbsolute.Y);
                     differenceX = (int)_releasedPosition.X - (int)_owner.PositionAbsolute.X;
                     differenceY = (int)_releasedPosition.Y - (int)_owner.PositionAbsolute.Y;
 
@@ -162,20 +168,20 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                     Vector2 currentPoint = new Vector2(input.CurrentMouseState.X, input.CurrentMouseState.Y);
                     Vector2 previousPoint = new Vector2(input.PreviousMouseState.X, input.PreviousMouseState.Y);
 
-                    _position.X = _position.X + (currentPoint.X - previousPoint.X);
-                    _position.Y = _position.Y + (currentPoint.Y - previousPoint.Y);
-                    _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40, 40);
+                    _positionAbsolute.X = _positionAbsolute.X + (currentPoint.X - previousPoint.X);
+                    _positionAbsolute.Y = _positionAbsolute.Y + (currentPoint.Y - previousPoint.Y);
+                    _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 40, 40);
 
                 }
                 else
                 {
 
 
-                    _position.X -= (int)(differenceX);
-                    _position.Y -= (int)(differenceY);
-                    _boundingBox = new Rectangle((int)_position.X, (int)_position.Y, 40, 40);
+                    _positionAbsolute.X -= (int)(differenceX);
+                    _positionAbsolute.Y -= (int)(differenceY);
+                    _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 40, 40);
 
-                    if (_position == _owner.PositionAbsolute)
+                    if (_positionAbsolute == _owner.PositionAbsolute)
                     {
                         differenceX = 0;
                         differenceY = 0;
@@ -189,13 +195,15 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         public override void Draw(SpriteBatch Batch, GameState state)
         {
+            _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, (int)_boundingBox.Width, (int)_boundingBox.Height);
+
             Batch.Draw(_icon, _boundingBox, Color.White);
 
             if(_inventoryItem.IsStackable)
             {
 
                 Vector2 stackCountMeasurement = ScreenManager.GetInstance().DefaultMenuFont.MeasureString("" + _inventoryItem.Stock);
-                Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, "" + _inventoryItem.Stock, _position + new Vector2(Width - (stackCountMeasurement.X+3), 0), Color.White);
+                Batch.DrawString(ScreenManager.GetInstance().DefaultMenuFont, "" + _inventoryItem.Stock, _positionAbsolute + new Vector2(Width - (stackCountMeasurement.X + 3), 0), Color.White);
             }
         }
 

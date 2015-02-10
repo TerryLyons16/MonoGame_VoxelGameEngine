@@ -96,6 +96,26 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory.Trade
 
         }
 
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+            _positionAbsolute = _positionRelative + parentPosition;
+
+            if (_buyTab != null)
+            {
+                _buyTab.Update(theTime);
+            }
+            if (_sellTab != null)
+            {
+                _sellTab.Update(theTime);
+            }
+
+            foreach (KeyValuePair<TradeType, ShopInventroyListView> pair in _tradeViews)
+            {
+                _tradeViews[pair.Key].Update(theTime, state);
+            }
+
+        }
+
         public override void Update(GameTime theTime, GameState state)
         {
             if (_buyTab!=null)

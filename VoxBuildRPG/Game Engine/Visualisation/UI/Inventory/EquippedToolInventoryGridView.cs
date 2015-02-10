@@ -11,8 +11,8 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
     public class EquippedToolInventoryGridView : InventoryGridView
     {
 
-        public EquippedToolInventoryGridView(EquippedToolInventory inventoryModel, int numCols, Vector2 positionAbsolute)
-            : base(inventoryModel,numCols,positionAbsolute)
+        public EquippedToolInventoryGridView(EquippedToolInventory inventoryModel, int numCols, Vector2 positionRelative,Vector2 parentPosition)
+            : base(inventoryModel, numCols, positionRelative, parentPosition)
         {
         }
 

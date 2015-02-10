@@ -34,8 +34,8 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         protected Color priceColor = Color.White;
 
-        public ShopInventoryListItem(Vector2 positionAbsolute, InventoryView owner, InventoryItem item, TradeType tradeType)
-            : base(positionAbsolute, owner, item)
+        public ShopInventoryListItem(Vector2 positionRelative, Vector2 parentPosition, InventoryView owner, InventoryItem item, TradeType tradeType)
+            : base(positionRelative, parentPosition, owner, item)
         {
             _tradeType = tradeType;
             _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 200, 50);

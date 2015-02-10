@@ -1,0 +1,6 @@
+﻿Effects (.fx) files must be compiled by Monogame's Pipeline.exe tool and loaded into this folder, set as "Content", "Copy If Newer".
+Note that they must be accessed using @"Content/Effects" from the output folder of the project.
+.fx files will be stored in the Content project for development/reference
+
+
+All POSITION semantics should be replaced with SV_POSITION

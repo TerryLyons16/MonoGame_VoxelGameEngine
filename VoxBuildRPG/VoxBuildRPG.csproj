@@ -84,6 +84,8 @@
     <Compile Include="Game Engine\Physics\CollisionBox.cs" />
     <Compile Include="Game Engine\Physics\CollisionFace.cs" />
     <Compile Include="Game Engine\Rendering\IRenderable.cs" />
+    <Compile Include="Game Engine\Rendering\Lighting\AbsractLight.cs" />
+    <Compile Include="Game Engine\Rendering\Lighting\PointLight.cs" />
     <Compile Include="Game Engine\Rendering\Renderer.cs" />
     <Compile Include="Game Engine\Rendering\ShaderManager.cs" />
     <Compile Include="Game Engine\Subsystems [OLD]\Physics System\AbstractPhysicsObject.cs" />
@@ -103,7 +105,7 @@
     <Compile Include="Game Engine\Rendering\Camera.cs" />
     <Compile Include="Game Engine\Visualisation\3D Screen [OLD]\GameWorldScreen[OLD].cs" />
     <Compile Include="Game Engine\Visualisation\AbstractDrawableGameObject.cs" />
-    <Compile Include="Game Engine\Visualisation\AbstractRendererScreen.cs" />
+    <Compile Include="Game Engine\Visualisation\AbstractHUDElement.cs" />
     <Compile Include="Game Engine\Visualisation\GameplayScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\GameHUDScreen.cs" />
     <Compile Include="Game Engine\Visualisation\UI\Inventory\AbilityInventoryGridView.cs" />
@@ -173,17 +175,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Effects\EffectCompiling.txt" />
     <Content Include="Icon.ico" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Game Engine\Inventory System\Abilities\Combat\" />
-    <Folder Include="Game Engine\Rendering\Lighting\" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\VoxBuildRPGContent\VoxBuildRPGContent\VoxBuildRPGContent.csproj">
-      <Project>{1c201c1d-8002-4120-abd4-954079bc4a9a}</Project>
-      <Name>VoxBuildRPGContent</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
@@ -208,7 +204,31 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Effects\DepthNormal.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\AmbientLight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Test.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\Lightmap.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PointLight.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Effects\PointLightmapTEST.xnb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VoxBuildRPGContent\VoxBuildRPGContent\VoxBuildRPGContent.csproj">
+      <Project>{1c201c1d-8002-4120-abd4-954079bc4a9a}</Project>
+      <Name>VoxBuildRPGContent</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

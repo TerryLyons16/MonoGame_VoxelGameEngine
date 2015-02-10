@@ -35,7 +35,6 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIcon.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconBlock.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Textures\UI\TestIconTool.xnb
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\Font.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\MenuFont.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Fonts\SimulatorFont.xnb
@@ -48,6 +47,7 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile.xnb
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\sphere.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb
@@ -57,10 +57,8 @@ C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRP
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\DepthNormal.fx
-C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\output.mgfx
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\IgnoreMe.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\IgnoreMe.dll
 C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\VoxBuildRPGContent.csprojResolveAssemblyReference.cache
+C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\sphere1.xnb

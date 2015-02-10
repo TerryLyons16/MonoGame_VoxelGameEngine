@@ -27,7 +27,8 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
             SelectAbilityNine,
             SelectAbilityTen,
             PrimaryHandClickAbility,
-            SecondaryHandClickAbility
+            SecondaryHandClickAbility,
+            ToggleShaders
         }
 
         private static GameWorldControlState controlState = null;
@@ -104,6 +105,11 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
                 selectedActions.Add(Actions.SelectAbilityTen);
             }
 
+            if (inputState.CurrentKeyboardState.IsKeyDown(Keys.Tab) && inputState.PreviousKeyboardState.IsKeyUp(Keys.Tab))
+            {
+                selectedActions.Add(Actions.ToggleShaders);
+            }
+
             if (inputState.CurrentMouseState.LeftButton == ButtonState.Released && inputState.PreviousMouseState.LeftButton == ButtonState.Pressed)
             {
                 //NOTE: Will need to determine if mouse is not over UI before firing event
@@ -175,6 +181,10 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
                     }
 
                     //...
+                    if(action==Actions.ToggleShaders)
+                    {
+                        OnToggleShaders();
+                    }
 
                     if (action == Actions.PrimaryHandClickAbility)
                     {
@@ -225,6 +235,17 @@ namespace VoxelRPGGame.GameEngine.EnvironmentState
             if (SecondaryHandAbilityOnClickEvent != null)
             {
                 SecondaryHandAbilityOnClickEvent(input);
+            }
+        }
+
+        public delegate void ToggleShaders();
+        public event ToggleShaders ToggleShadersEvent;
+
+        public void OnToggleShaders()
+        {
+            if (ToggleShadersEvent != null)
+            {
+                ToggleShadersEvent();
             }
         }
 

@@ -335,15 +335,6 @@
       <Time>2014-08-18T18:36:55.8291484+01:00</Time>
     </Item>
     <Item>
-      <Source>Effects\Billboard.fx</Source>
-      <Name>Effects\Billboard</Name>
-      <Importer>EffectImporter</Importer>
-      <Processor>EffectProcessor</Processor>
-      <Options>None</Options>
-      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Effects\Billboard.xnb</Output>
-      <Time>2014-08-11T19:30:25.3434696+01:00</Time>
-    </Item>
-    <Item>
       <Source>Fonts\Font.spritefont</Source>
       <Name>Fonts\Font</Name>
       <Importer>FontDescriptionImporter</Importer>
@@ -380,7 +371,7 @@
       <Time>2014-08-11T19:30:25.7809755+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\crate_0.xml</Key>
-        <Value>2014-11-03T21:57:34.5745074+00:00</Value>
+        <Value>2015-02-09T21:56:49.5387222+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\Crate_texture_0.xnb</Request>
     </Item>
@@ -394,7 +385,7 @@
       <Time>2014-08-11T19:30:25.8591006+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Factory_0.xml</Key>
-        <Value>2014-11-03T21:57:40.5154354+00:00</Value>
+        <Value>2015-02-09T21:56:51.1801322+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\HomeTexture_0.xnb</Request>
     </Item>
@@ -408,7 +399,7 @@
       <Time>2014-08-11T19:30:25.9059762+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Freelancer_0.xml</Key>
-        <Value>2014-11-03T21:57:42.5473252+00:00</Value>
+        <Value>2015-02-09T21:56:51.6818037+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\char_0.xnb</Request>
     </Item>
@@ -422,7 +413,7 @@
       <Time>2014-08-11T19:30:25.9371996+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\GreenBox_0.xml</Key>
-        <Value>2014-11-03T21:57:42.9223028+00:00</Value>
+        <Value>2015-02-09T21:56:51.7819+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\GreenBox_0.xnb</Request>
     </Item>
@@ -436,7 +427,7 @@
       <Time>2014-08-11T19:30:26.0153269+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\Node_0.xml</Key>
-        <Value>2014-11-03T21:57:44.5478055+00:00</Value>
+        <Value>2015-02-09T21:56:52.2440383+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\NodeTexture_0.xnb</Request>
     </Item>
@@ -450,7 +441,7 @@
       <Time>2014-08-11T19:30:26.0622264+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\OrangeBox_0.xml</Key>
-        <Value>2014-11-03T21:57:46.8138502+00:00</Value>
+        <Value>2015-02-09T21:56:52.8517521+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\OrangeBox_0.xnb</Request>
     </Item>
@@ -464,7 +455,7 @@
       <Time>2014-08-11T19:30:26.0937274+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\PortalTile_0.xml</Key>
-        <Value>2014-11-03T21:57:48.3454458+00:00</Value>
+        <Value>2015-02-09T21:56:53.2839346+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\PortalTile_0.xnb</Request>
     </Item>
@@ -478,7 +469,7 @@
       <Time>2014-08-11T19:30:26.1405546+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\RedBox_0.xml</Key>
-        <Value>2014-11-03T21:57:50.439412+00:00</Value>
+        <Value>2015-02-09T21:56:53.8643688+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\RedBox_0.xnb</Request>
     </Item>
@@ -492,9 +483,22 @@
       <Time>2014-08-11T19:30:26.1718534+01:00</Time>
       <Dependency>
         <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\tile_0.xml</Key>
-        <Value>2014-11-03T21:57:51.9711059+00:00</Value>
+        <Value>2015-02-09T21:56:54.2737081+00:00</Value>
       </Dependency>
       <Request>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb</Request>
+    </Item>
+    <Item>
+      <Source>Models\sphere.x</Source>
+      <Name>Models\sphere</Name>
+      <Importer>XImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\sphere.xnb</Output>
+      <Time>2015-02-09T21:12:48.6561206+00:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\sphere_0.xml</Key>
+        <Value>2015-02-09T21:56:54.7457585+00:00</Value>
+      </Dependency>
     </Item>
     <Item>
       <Source>Models\crate.fbx</Source>
@@ -703,6 +707,33 @@
       <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\tile_0.xnb</Output>
       <Time>2014-08-11T19:30:26.1874781+01:00</Time>
     </Item>
+    <Item>
+      <Source>Models\sphere.x</Source>
+      <Importer>XImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\sphere_0.xml</Output>
+      <Time>2015-02-09T21:12:48.6561206+00:00</Time>
+    </Item>
+    <Item>
+      <Source>Models\sphere1.fbx</Source>
+      <Name>Models\sphere1</Name>
+      <Importer>FbxImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\bin\PSM\Content\Models\sphere1.xnb</Output>
+      <Time>2015-02-10T18:53:07.932063+00:00</Time>
+      <Dependency>
+        <Key>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\sphere1_0.xml</Key>
+        <Value>2015-02-10T18:53:30.932518+00:00</Value>
+      </Dependency>
+    </Item>
+    <Item>
+      <Source>Models\sphere1.fbx</Source>
+      <Importer>FbxImporter</Importer>
+      <Options>IntermediateFile, DontCacheImportedData</Options>
+      <Output>C:\Users\Freelancer\documents\visual studio 2013\Projects\VoxBuildRPG\VoxBuildRPGContent\VoxBuildRPGContent\obj\PSM\Models\sphere1_0.xml</Output>
+      <Time>2015-02-10T18:53:07.932063+00:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <ContentProjectGUID>{66A02B7D-B147-473E-98E3-A5CCDCA57C56}</ContentProjectGUID>
@@ -718,7 +749,7 @@
     <Assemblies>
       <Assembly>
         <Key>C:\Program Files (x86)\MSBuild\MonoGame\v3.0\MonoGameContentProcessors.dll</Key>
-        <Value>2014-04-05T22:56:18+01:00</Value>
+        <Value>2014-11-09T03:45:02+00:00</Value>
       </Assembly>
       <Assembly>
         <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>

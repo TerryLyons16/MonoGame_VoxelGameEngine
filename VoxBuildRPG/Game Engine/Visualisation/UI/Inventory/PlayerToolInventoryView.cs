@@ -56,24 +56,25 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
             }
         }
 
-        public PlayerToolInventoryView(EquippedItemsInventory playerEquipmentInventory, Vector2 positionAbsolute)
+        public PlayerToolInventoryView(EquippedItemsInventory playerEquipmentInventory, Vector2 positionRelative,Vector2 parentPosition)
         {
             isVisible = true;
             IsActive = true;
-            _positionAbsolute = new Vector2(positionAbsolute.X, positionAbsolute.Y);
+            _positionRelative = positionRelative;
+            _positionAbsolute = positionRelative + parentPosition;
 
             hasFocus = true;
 
             _equippedItemsInventory = playerEquipmentInventory;
-            _primaryHand = new EquippedToolInventoryGridView(_equippedItemsInventory.PrimaryHandInventory, 1, positionAbsolute);
+            _primaryHand = new EquippedToolInventoryGridView(_equippedItemsInventory.PrimaryHandInventory, 1, Vector2.Zero, _positionAbsolute);
             _equippedItemsInventory.PrimaryHandInventory.ToolAddedEvent += OnToolAdded;
             _equippedItemsInventory.PrimaryHandInventory.ToolRemovedEvent += OnToolRemoved;
 
             ((EquippedToolInventory)_primaryHand.InventoryModel).AbilitiesChangedEvent += OnPrimaryToolAbilitiesChanged;
-            _primaryHandAbilities = new AbilityInventoryGridView(_equippedItemsInventory.PrimaryHandInventory.Abilities, _equippedItemsInventory.PrimaryHandInventory.Abilities.MaxCapacity, _primaryHand.Position + new Vector2(_primaryHand.Width + 15, 0), 5,false);
+            _primaryHandAbilities = new AbilityInventoryGridView(_equippedItemsInventory.PrimaryHandInventory.Abilities, _equippedItemsInventory.PrimaryHandInventory.Abilities.MaxCapacity, (_primaryHand.Position + new Vector2(_primaryHand.Width + 15, 0)) - _positionAbsolute, _positionAbsolute, 5, false);
 
-            _secondaryHandAbilities = new AbilityInventoryGridView(_equippedItemsInventory.SecondaryHandInventory.Abilities, _equippedItemsInventory.SecondaryHandInventory.Abilities.MaxCapacity, _primaryHandAbilities.Position + new Vector2(_primaryHandAbilities.Width + 5, 0), 5,true);
-            _secondaryHand = new EquippedToolInventoryGridView(playerEquipmentInventory.SecondaryHandInventory, 1, _secondaryHandAbilities.Position + new Vector2(_secondaryHandAbilities.Width + 15, 0));
+            _secondaryHandAbilities = new AbilityInventoryGridView(_equippedItemsInventory.SecondaryHandInventory.Abilities, _equippedItemsInventory.SecondaryHandInventory.Abilities.MaxCapacity, (_primaryHandAbilities.Position + new Vector2(_primaryHandAbilities.Width + 5, 0)) - _positionAbsolute, _positionAbsolute, 5, true);
+            _secondaryHand = new EquippedToolInventoryGridView(playerEquipmentInventory.SecondaryHandInventory, 1, (_secondaryHandAbilities.Position + new Vector2(_secondaryHandAbilities.Width + 15, 0)) - _positionAbsolute, _positionAbsolute);
             ((EquippedToolInventory)_secondaryHand.InventoryModel).AbilitiesChangedEvent += OnSecondaryToolAbilitiesChanged;
 
             _equippedItemsInventory.SecondaryHandInventory.ToolAddedEvent += OnToolAdded;
@@ -103,6 +104,31 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                 _secondaryHandAbilities.HandleInput(gameTime, input, state);
             }
            
+        }
+
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+            _positionAbsolute = _positionRelative + parentPosition;
+
+            if (_primaryHand != null)
+            {
+                _primaryHand.Update(theTime, state, _positionAbsolute);
+            }
+
+            if (_primaryHandAbilities != null)
+            {
+                _primaryHandAbilities.Update(theTime, state, _positionAbsolute);
+            }
+
+            if (_secondaryHand != null)
+            {
+                _secondaryHand.Update(theTime, state, _positionAbsolute);
+            }
+
+            if (_secondaryHandAbilities != null)
+            {
+                _secondaryHandAbilities.Update(theTime, state, _positionAbsolute);
+            }
         }
 
         public override void Update(GameTime theTime, GameState state)

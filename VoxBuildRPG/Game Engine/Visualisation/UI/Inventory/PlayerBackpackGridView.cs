@@ -12,8 +12,8 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 {
     public class PlayerBackpackGridView : InventoryGridView
     {
-        public PlayerBackpackGridView(PlayerInventory inventoryModel, int numCols, Vector2 positionAbsolute)
-            : base(inventoryModel,numCols,positionAbsolute)
+        public PlayerBackpackGridView(PlayerInventory inventoryModel, int numCols, Vector2 positionRelative,Vector2 parentPosition)
+            : base(inventoryModel, numCols, positionRelative, parentPosition)
         {
 
         }

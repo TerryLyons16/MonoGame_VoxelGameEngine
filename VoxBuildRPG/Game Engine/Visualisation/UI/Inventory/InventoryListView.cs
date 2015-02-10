@@ -75,6 +75,10 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         }
 
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+        }
+
         public override void Update(GameTime theTime, GameState state)
         {
             foreach (InventoryListItem i in _inventoryList)
@@ -119,7 +123,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
             foreach (InventoryItem item in _inventoryModel.Items)
             {
-                InventoryListItem listItem = new InventoryListItem(_itemPosition,this,item);
+                InventoryListItem listItem = new InventoryListItem(_itemPosition-_positionAbsolute,_positionAbsolute,this,item);
 
                 _inventoryList.Add(listItem);
                 _itemPosition.Y += listItem.Height;

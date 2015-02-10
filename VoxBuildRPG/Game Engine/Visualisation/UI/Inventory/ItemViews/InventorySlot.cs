@@ -47,11 +47,12 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         }
         protected Color TEMPCOLOR = Color.White;
 
-        public InventorySlot(Vector2 positionAbsolute, InventoryView owner)
+        public InventorySlot(Vector2 positionRelative, Vector2 parentPosition, InventoryView owner)
         {
+            _positionRelative = positionRelative;
+            _positionAbsolute = positionRelative + parentPosition;
             _owner = owner;
             _slotTexture = ScreenManager.GetInstance().ContentManager.Load<Texture2D>("Textures\\UI\\InventorySlot");
-            _positionAbsolute = new Vector2(positionAbsolute.X, positionAbsolute.Y);
             _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 40,40);
 
 
@@ -59,10 +60,10 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         }
 
 
-        public InventorySlot(Vector2 _positionAbsolute, InventoryItem item, InventoryView owner)
-            : this(_positionAbsolute,owner)
+        public InventorySlot(Vector2 positionRelative, Vector2 parentPosition, InventoryItem item, InventoryView owner)
+            : this(positionRelative, parentPosition, owner)
         {
-            _inventoryItem = new InventoryItemView(item, PositionAbsolute, this);
+            _inventoryItem = new InventoryItemView(item, Vector2.Zero,_positionAbsolute, this);
         }
 
         public bool AddInventoryItem(InventoryItemView item)
@@ -126,6 +127,18 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
             }
         }
 
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+            _positionAbsolute = _positionRelative + parentPosition;
+
+            if (_inventoryItem != null)
+            {
+                _inventoryItem.Update(theTime, state);
+            }
+
+
+        }
+
         public override void Update(GameTime theTime, GameState state)
         {
             if (_inventoryItem != null)
@@ -176,9 +189,9 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                 _inventoryItem.Draw(Batch, state);
             }
 
+            _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, (int)_boundingBox.Width, (int)_boundingBox.Height);
+
             Batch.Draw(_slotTexture, _boundingBox, TEMPCOLOR);
-
-
         }
 
 

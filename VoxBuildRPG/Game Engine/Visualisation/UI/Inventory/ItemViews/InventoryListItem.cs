@@ -31,10 +31,10 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
             }
         }
 
-        public InventoryListItem(Vector2 positionAbsolute, InventoryView owner,InventoryItem item)
-            : base(positionAbsolute, owner)
+        public InventoryListItem(Vector2 positionRelative,Vector2 parentPosition, InventoryView owner,InventoryItem item)
+            : base(positionRelative, parentPosition, owner)
         {
-            _inventoryItem = new Inventory.InventoryItemView(item, _positionAbsolute, this,false);
+            _inventoryItem = new Inventory.InventoryItemView(item, Vector2.Zero,_positionAbsolute, this,false);
             _boundingBox = new Rectangle((int)_positionAbsolute.X, (int)_positionAbsolute.Y, 100, 50);
         }
 

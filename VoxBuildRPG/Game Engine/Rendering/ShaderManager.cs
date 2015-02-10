@@ -11,7 +11,9 @@ namespace VoxelRPGGame.GameEngine.Rendering
     public class ShaderManager
     {
         private BasicEffect _defaultEffect;
-        private Effect DepthNormal;
+        private Effect _ambient;
+        private Effect _depthNormal;
+        private Effect _lightmap;
 
         private static ShaderManager _shaderManager = null;
            
@@ -45,9 +47,9 @@ namespace VoxelRPGGame.GameEngine.Rendering
         //Load shaders into memory
         public void LoadShaders()
         {
-        //    DepthNormal = ScreenManager.GetInstance().ContentManager.Load<Effect>("Effets/DepthNormal");
-         /*   BinaryReader Reader = new BinaryReader(File.Open(@"Content\\Effects\\output.mgfx", FileMode.Open));
-            DepthNormal = new Effect(ScreenManager.GetInstance().GraphicsDevice, Reader.ReadBytes((int)Reader.BaseStream.Length)); */
+            _ambient = ScreenManager.GetInstance().ContentManager.Load<Effect>(@"Effects/AmbientLight");
+            _depthNormal = ScreenManager.GetInstance().ContentManager.Load<Effect>(@"Effects/DepthNormal");
+            _lightmap = ScreenManager.GetInstance().ContentManager.Load<Effect>(@"Effects/Lightmap");
         }
 
 
@@ -58,5 +60,32 @@ namespace VoxelRPGGame.GameEngine.Rendering
                 return _defaultEffect;
             }
         }
+
+        public Effect Ambient
+        {
+            get
+            {
+                return _ambient;
+            }
+        }
+
+        public Effect DepthNormal
+        {
+            get
+            {
+                return _depthNormal;
+            }
+
+        }
+
+        public Effect Lightmap
+        {
+            get
+            {
+                return _lightmap;
+            }
+
+        }
+
     }
 }

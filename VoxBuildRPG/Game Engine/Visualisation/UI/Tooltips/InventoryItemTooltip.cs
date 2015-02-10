@@ -56,6 +56,10 @@ namespace VoxelRPGGame.GameEngine.UI.Tooltips
             isVisible = true;
         }
 
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+        }
+
         public override void Update(GameTime theTime, GameState state)
         {
         }

@@ -117,6 +117,9 @@ namespace VoxelRPGGame.GameEngine.UI.UIComponents
             _increaseQuantity.IsActive = true;
         }
 
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+        }
 
         public override void Update(GameTime theTime, GameState state)
         {

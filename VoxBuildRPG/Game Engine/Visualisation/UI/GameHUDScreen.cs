@@ -4,7 +4,7 @@ using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
+
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
@@ -29,10 +29,11 @@ namespace VoxelRPGGame.GameEngine.UI
     /// Class that handles the rendering of all 2D elements of the game state
     /// NOTE: Will need a layout class to define the HUD elements for a particular game
     /// </summary>
-    public class GameHUDScreen: AbstractRendererScreen
+    public class GameHUDScreen: AbstractHUDElement
     {
         protected LinkedList<UIElement> _UIElements;
         private static GameHUDScreen _hudScreen = null;
+
 
 
         private string TickText = "";
@@ -42,6 +43,8 @@ namespace VoxelRPGGame.GameEngine.UI
 
         PlayerInventory playerInventory;
         VoxelRPGGame.GameEngine.InventorySystem.Inventory tempInventory2;
+
+        protected Vector2 _defaultPosition = Vector2.Zero;
 
        
         public static GameHUDScreen GetInstance()
@@ -70,6 +73,8 @@ namespace VoxelRPGGame.GameEngine.UI
             hasFocus = true;
             isActive = true;
             _UIElements = new LinkedList<UIElement>();
+            _positionAbsolute = Vector2.Zero;
+            _positionRelative = _positionAbsolute;
         }
 
 
@@ -103,11 +108,11 @@ namespace VoxelRPGGame.GameEngine.UI
             tempInventory2 = new InventorySystem.Inventory(43);
            // tempInventory2.AddItem(new InventorySystem.InventoryItem("Textures\\UI\\TestIcon"));
             
-            _UIElements.AddLast(new PlayerBackpackGridView(playerInventory, 4, new Vector2(ScreenManager.GetInstance().GraphicsDevice.Viewport.Width - 200, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height- 300)));
+            _UIElements.AddLast(new PlayerBackpackGridView(playerInventory, 4, new Vector2(ScreenManager.GetInstance().GraphicsDevice.Viewport.Width - 200, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height- 300),_positionAbsolute));
         //    _UIElements.Add(new InventoryGridView(tempInventory2, 6, new Vector2(200,300)));
 
             InventorySystem.CharacterInventory characterInventory = new InventorySystem.CharacterInventory();
-            _UIElements.AddLast(new PlayerToolInventoryView(characterInventory.EquippedItems, new Vector2((ScreenManager.GetInstance().GraphicsDevice.Viewport.Width / 2) - 270, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height - 60)));
+            _UIElements.AddLast(new PlayerToolInventoryView(characterInventory.EquippedItems, new Vector2((ScreenManager.GetInstance().GraphicsDevice.Viewport.Width / 2) - 270, ScreenManager.GetInstance().GraphicsDevice.Viewport.Height - 60), _positionAbsolute));
 
 
             if (playerInventory is ITradeInventory)
@@ -121,6 +126,10 @@ namespace VoxelRPGGame.GameEngine.UI
             TickText.Alpha = 1.0f;
             TickText.Font = ScreenManager.GetInstance().DefaultMenuFont;
             TickText.Position = new Vector2(ScreenManager.GetInstance().GraphicsDevice.Viewport.Width-100, 20);*/
+        }
+
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
         }
 
         public override void Update(GameTime theTime, GameState state)
@@ -143,7 +152,7 @@ namespace VoxelRPGGame.GameEngine.UI
                 if (e.IsActive)
                 {
                     //NOTE: May not need access to the game state
-                    e.Update(theTime,state);
+                    e.Update(theTime,state,_positionAbsolute);
                 }
             }
 
@@ -154,6 +163,15 @@ namespace VoxelRPGGame.GameEngine.UI
 
         public override void HandleInput(GameTime gameTime, InputState input, GameState state)
         {
+            float offsetDampning=10;
+
+            //Treats middle of screen as default mouse position
+          //  Vector2 mouseMoveOffset = new Vector2((ScreenManager.GetInstance().GraphicsDevice.Viewport.Width/2 - input.CurrentMouseState.X)/offsetDampning, (ScreenManager.GetInstance().GraphicsDevice.Viewport.Height/2 - input.CurrentMouseState.Y)/offsetDampning);
+
+            //Treats top left of screen as default mouse position
+            Vector2 mouseMoveOffset = new Vector2((0 - input.CurrentMouseState.X) / offsetDampning, (0 - input.CurrentMouseState.Y) / offsetDampning);
+            _positionAbsolute = _defaultPosition + mouseMoveOffset;
+
 
                //Use a temp List in case list is modified during update
             List<UIElement> tempElements = new List<UIElement>();

@@ -57,11 +57,13 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
         }
 
 
-        public InventoryGridView(InventorySystem.IInventory inventoryModel,int numCols,Vector2 positionAbsolute):base(inventoryModel)
+        public InventoryGridView(InventorySystem.IInventory inventoryModel,int numCols,Vector2 positionRelative, Vector2 parentPosition):base(inventoryModel)
         {
             isVisible = true;
-            _positionAbsolute = new Vector2(positionAbsolute.X, positionAbsolute.Y);
-
+            isActive = true;
+            _positionRelative = new Vector2(positionRelative.X, positionRelative.Y);
+            _positionAbsolute = _positionRelative + parentPosition;
+        
             hasFocus = true;
 
             _numCols = numCols;
@@ -114,11 +116,17 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
         public override void Update(GameTime theTime, GameState state)
         {
+        }
+
+        public override void Update(GameTime theTime, GameState state, Vector2 parentPosition)
+        {
+            _positionAbsolute = _positionRelative + parentPosition;
+
             foreach (InventorySlot i in _inventoryGrid)
             {
                 if (i != null)
                 {
-                    i.Update(theTime, state);
+                    i.Update(theTime, state, _positionAbsolute);
                 }
             }
         }
@@ -168,7 +176,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                         //1.1 If updated grid does not have item in desired position
                         if (!updatedGrid[posX, posY].ContainsItem())
                         {
-                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute, item, this);
+                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute-_positionAbsolute,_positionAbsolute, item, this);
                         }
                         //1.2 If updated grid does have item in desired position
                         else
@@ -177,7 +185,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
                             posX = pos[0];
                             posY = pos[1];
-                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute, item, this);
+                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute - _positionAbsolute, _positionAbsolute, item, this);
                         }
 
                         //If item was already in the view, remove it, as it has been moved
@@ -197,7 +205,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
                         //2.1 If updated grid does not have item in desired position
                         if (!updatedGrid[posX, posY].ContainsItem())
                         {
-                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute, item, this);
+                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute - _positionAbsolute, _positionAbsolute, item, this);
                         }
                         //2.2 If updated grid does have item in desired position
                         else
@@ -206,7 +214,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
                             posX = pos[0];
                             posY = pos[1];
-                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute, item, this);
+                            updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute - _positionAbsolute, _positionAbsolute, item, this);
                         }
                         //Remove from update list as it has been added
                         currentItems.Remove(item);
@@ -218,7 +226,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
 
                         int posX = pos[0];
                         int posY = pos[1];
-                        updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute, item, this);
+                        updatedGrid[posX, posY] = new InventorySlot(_inventoryGrid[posX, posY].PositionAbsolute - _positionAbsolute, _positionAbsolute, item, this);
                     }
                 }
             }
@@ -313,7 +321,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory
             {
                 for (int i = 0; i < result.GetLength(0); i++)
                 {
-                    InventorySlot InventorySlot = new InventorySlot(new Vector2(_positionAbsolute.X + (45 * i), _positionAbsolute.Y + (45 * j)),this);
+                    InventorySlot InventorySlot = new InventorySlot(new Vector2(_positionAbsolute.X + (45 * i), _positionAbsolute.Y + (45 * j))-_positionAbsolute,_positionAbsolute,this);
                     InventorySlot.IsVisible = true;
                     InventorySlot.IsActive = true;
                     InventorySlot.HasFocus = true;

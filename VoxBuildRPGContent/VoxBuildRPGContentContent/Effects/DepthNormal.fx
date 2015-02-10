@@ -4,13 +4,13 @@ float4x4 Projection;
 
 struct VertexShaderInput
 {
-	float4 Position : POSITION0;
+	float4 Position : SV_POSITION;
 	float3 Normal : NORMAL0;
 };
 
 struct VertexShaderOutput
 {
-	float4 Position : POSITION0;
+	float4 Position : SV_POSITION;
 	float2 Depth : TEXCOORD0;
 	float3 Normal : TEXCOORD1;
 };
@@ -63,7 +63,7 @@ technique Technique1
 {
 	pass Pass1
 	{
-		VertexShader = compile vs_2_0 VertexShaderFunction();
-		PixelShader = compile ps_2_0 PixelShaderFunction();
+		VertexShader = compile vs_4_0_level_9_3 VertexShaderFunction();//vs_3_0
+			PixelShader = compile ps_4_0_level_9_3 PixelShaderFunction();//ps_3_0
 	}
 }

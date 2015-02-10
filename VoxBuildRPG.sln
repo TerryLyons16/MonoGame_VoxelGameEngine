@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxBuildRPG", "VoxBuildRPG\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxBuildRPGContent", "VoxBuildRPGContent\VoxBuildRPGContent\VoxBuildRPGContent.csproj", "{1C201C1D-8002-4120-ABD4-954079BC4A9A}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "VoxBuildRPGContentContent", "VoxBuildRPGContent\VoxBuildRPGContentContent\VoxBuildRPGContentContent.contentproj", "{66A02B7D-B147-473E-98E3-A5CCDCA57C56}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoxBuildRPGContentContent", "VoxBuildRPGContent\VoxBuildRPGContentContent\VoxBuildRPGContentContent.contentproj", "{66A02B7D-B147-473E-98E3-A5CCDCA57C56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -44,7 +44,7 @@ namespace VoxelRPGGame.GameEngine.UI.Inventory.Trade
              {
                  if (item is ITradeableItem)
                  {
-                     ShopInventoryListItem listItem = new ShopInventoryListItem(_itemPosition, this, item, _tradeType);
+                     ShopInventoryListItem listItem = new ShopInventoryListItem(_itemPosition-_positionAbsolute,_positionAbsolute, this, item, _tradeType);
 
                      if (_tradeType == TradeType.Buy)
                      {
